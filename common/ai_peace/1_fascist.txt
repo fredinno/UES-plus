@@ -196,7 +196,7 @@ fascist_peace = {
 			factor = 0 #0.5 - only liberate fascists!
 			NOT = {
 				FROM = {
-					has_government = fascist
+					has_government = fascism
 				}
 			}
 		}
@@ -207,6 +207,10 @@ fascist_peace = {
 					tag = SIK
 					tag = PRC
 					tag = GXC
+					tag = ADR
+					tag = LIE
+					tag = SNM
+					tag = MNA
 					tag = YUN
 					tag = SCH #UES: Sichuan
 					tag = SHX
@@ -267,7 +271,19 @@ fascist_peace = {
 					tag = MEC
 					tag = POM
 					tag = HLS
+					tag = ADR
+					tag = LIE
+					tag = MNA
+					tag = SNM
+					tag = BER
+					tag = KOU
+					tag = ULS
+					tag = BAT
 					tag = SIL
+					tag = CZR
+					tag = TRA
+					tag = PRS
+					tag = HNA
 				}
 			}
 		}		
@@ -316,6 +332,7 @@ fascist_peace = {
 			FROM = {
 				OR = {
 					tag = BHU
+					tag = LGA
 					tag = MEN
 					tag = NEP
 					tag = SIA
@@ -509,6 +526,8 @@ fascist_peace = {
 			OR = {
 				is_in_faction_with = GER
 				is_in_faction_with = FRA
+				is_in_faction_with = SOV
+				is_in_faction_with = ENG
 				is_in_faction_with = ITA
 			}
 			FROM = {

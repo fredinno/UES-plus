@@ -2430,7 +2430,7 @@ focus_tree = {
 				popularity = 0.35
 				ideology = communism
 			}
-			add_national_unity = -0.05
+			add_stability = -0.05
 			add_opinion_modifier = { modifier = ROM_appoint_soviet_friendly_government target = SOV }
 			SOV = { add_opinion_modifier = { modifier = ROM_appoint_soviet_friendly_government target = ROOT } }
 		}
@@ -2560,7 +2560,7 @@ focus_tree = {
 			}
 			custom_effect_tooltip = available_political_advisor
 			show_ideas_tooltip = ROM_mihail_sturdza
-			add_national_unity = -0.05
+			add_stability = -0.05
 			add_opinion_modifier = { modifier = ROM_appoint_german_friendly_government target = GER }
 			GER = { add_opinion_modifier = { modifier = ROM_appoint_german_friendly_government target = ROOT } }
 			
@@ -2811,7 +2811,7 @@ focus_tree = {
 				popularity = 0.35
 				ideology = democratic
 			}
-			add_national_unity = -0.05
+			add_stability = -0.05
 			add_opinion_modifier = { modifier = ROM_appoint_allied_friendly_government target = ENG }
 			ENG = { add_opinion_modifier = { modifier = ROM_appoint_allied_friendly_government target = ROOT } }
 		}

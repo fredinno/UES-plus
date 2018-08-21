@@ -85,12 +85,12 @@
  KRA_SOV_communism_autonomy_integrated_puppet:0 "krasnoyarsk SSR"
  KRA_SOV_communism_autonomy_dominion_DEF:0 "The krasnoyarsk People's Republic"
  KRA_SOV_communism_autonomy_colony_DEF:0 "The Socialist Republic of krasnoyarsk"
- KRA_SOV_communism_autonomy_puppet_DEF:1 "The Krasnoyarsk Independent SSR"
- KRA_SOV_communism_autonomy_integrated_puppet_DEF:0 "The Krasnoyarsk SSR"
- DAG_SOV_communism_autonomy_dominion:0 "Dagestan People's Republic"
+ KRA_SOV_communism_autonomy_puppet_DEF:1 "The krasnoyarsk Independent SSR"
+ KRA_SOV_communism_autonomy_integrated_puppet_DEF:0 "The krasnoyarsk SSR"
+ DAG_SOV_communism_autonomy_dominion:0 "dagestan People's Republic"
  DAG_SOV_communism_autonomy_colony:0 "Socialist Republic of dagestan"
- DAG_SOV_communism_autonomy_puppet:1 "Dagestan Independent SSR"
- DAG_SOV_communism_autonomy_integrated_puppet:0 "Dagestan SSR"
+ DAG_SOV_communism_autonomy_puppet:1 "dagestan Independent SSR"
+ DAG_SOV_communism_autonomy_integrated_puppet:0 "dagestan SSR"
  DAG_SOV_communism_autonomy_dominion_DEF:0 "The dagestan People's Republic"
  DAG_SOV_communism_autonomy_colony_DEF:0 "The Socialist Republic of dagestan"
  DAG_SOV_communism_autonomy_puppet_DEF:1 "The dagestan Independent SSR"
@@ -142,8 +142,4 @@
  PRC_SGN_fascism_ADJ:0 "Chinese"
  PRC_SGN_democratic_ADJ:0 "Chinese"
  PRC_SGN_neutrality_ADJ:0 "Chinese"
- PRC_SGN_communism_ADJ:0 "Chinese
-
- NNG_GER_subject:0 "German New Guinea"
- NNG_GER_subject_DEF:0 "The German New Guinea"
- 
+ PRC_SGN_communism_ADJ:0 "Chinese"

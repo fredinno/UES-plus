@@ -65,8 +65,6 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 13037;4646;sea;4465;-1;-1;-1;-1;;Kurils-Hokkaido
 9952;1117;sea;2658;-1;-1;-1;-1;;Niigata-Sado
 10092;7046;sea;8791;-1;-1;-1;-1;;Kyushu-Shikoku
-4198;12032;sea;8472;-1;-1;-1;-1;;Kanoya-Yokushima
-11948;1177;sea;2708;-1;-1;-1;-1;;Jeju-Korea
 10124;1123;sea;8499;-1;-1;-1;-1;;Okinawa 1
 1123;7115;sea;8318;-1;-1;-1;-1;;Okinawa 2
 3995;13024;sea;2855;-1;-1;-1;-1;;Saipan-Tinian
@@ -125,7 +123,6 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 9833;11829;sea;5412;-1;-1;-1;-1;;Bosphorus
 9680;6741;sea;8282;-1;-1;-1;-1;;Kerch Strait
 9859;3962;sea;5946;-1;-1;-1;-1;;Tsugaru Strait
-10011;7110;sea;2708;-1;-1;-1;-1;;Tushima-Kyushu
 4160;1070;sea;5244;-1;-1;-1;-1;;Hainan-Strait
 1712;12147;sea;8978;-1;-1;-1;-1;;Quebec-Strait
 3691;7813;sea;6261;-1;-1;-1;-1;;Cold Ass-Strait

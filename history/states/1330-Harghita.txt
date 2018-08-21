@@ -1,18 +1,23 @@
+
 state={
 	id=1330
 	name="STATE_1330"
+
 	history={
 		owner = ROM
 		buildings = {
 			infrastructure = 4
+
 		}
 		add_core_of = ROM
 		add_core_of = TRA
+
 	}
+
 	provinces={
-		711 9670 9685 
+		711 9670 
 	}
-	manpower=392116
+	manpower=242116
 	buildings_max_level_factor=1.000
 	state_category=rural
 }

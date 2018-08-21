@@ -1,0 +1,18 @@
+state={
+	id=2431
+	name="STATE_2431"
+	history={
+		owner = ENG
+		buildings = {
+			infrastructure = 1
+		}
+		add_core_of = KEN
+		add_core_of = EAC
+	}
+	provinces={
+		13373 
+	}
+	manpower=106390
+	buildings_max_level_factor=1.000
+	state_category=enclave
+}

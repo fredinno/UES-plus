@@ -1,5 +1,5 @@
 ﻿#add neutral foreign policy
-capital = 2260
+capital = 2349
 
 set_research_slots = 1
 

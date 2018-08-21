@@ -11,11 +11,12 @@ state={
 			infrastructure = 6
 		}
 		add_core_of = FRA
+		add_core_of = VAS
 	}
 	provinces={
 		743 9710 
 	}
-	manpower=235100
+	manpower=229345
 	buildings_max_level_factor=1.000
 	state_category=town
 }

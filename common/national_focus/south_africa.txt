@@ -1034,7 +1034,7 @@ focus_tree = {
 			ENG = { remove_from_faction = ROOT }
 			set_rule = { can_create_factions = yes }
 			add_political_power = 70
-			add_national_unity = 0.1
+			add_war_support = 0.1
 		}
 	}
 
@@ -1172,7 +1172,7 @@ focus_tree = {
 			create_wargoal = {
 				type = take_state_focus
 				target = ENG
-				generator = { 542 545 775 776 2296 }
+				generator = { 542 545 775 776 2388 2296 770 771 2374 }
 			}
 		}
 	}
@@ -1316,6 +1316,13 @@ focus_tree = {
 			controls_state = 546
 			controls_state = 775
 			controls_state = 776
+			controls_state = 2388
+			controls_state = 771
+			owns_state = 2305
+			owns_state = 2304
+			owns_state = 2375
+			controls_state = 2374
+			controls_state = 770 
 			controls_state = 2292
 			controls_state = 2293
 			controls_state = 2296
@@ -1349,6 +1356,7 @@ focus_tree = {
 						state = 718
 						state = 775
 						state = 776
+						state = 2388
 						state = 2292
 						state = 2293
 						state = 2296
@@ -1362,6 +1370,11 @@ focus_tree = {
 						state = 2300
 						state = 777
 						state = 778
+						state = 2305
+						state = 2304
+						state = 2375
+						state = 2374
+						state = 770 
 					}
 				}
 				add_extra_state_shared_building_slots = 1
@@ -1841,7 +1854,7 @@ focus_tree = {
 			create_wargoal = {
 					type = take_state_focus
 					target = ENG
-					generator = { 546 547 548 542 545 775 776 2296 2293 2292 2295 2294 }
+					generator = { 546 547 548 542 545 775 776 2388 2296 2293 2292 2295 2294 2374 771 770 2431  }
 					}
 			
 		}

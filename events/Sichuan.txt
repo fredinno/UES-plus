@@ -36,7 +36,7 @@ country_event = {
 		name = sichuan.1.a
 		ai_chance = { factor = 95 }
 		CHI = {
-			add_national_unity = 0.05
+			add_stability = 0.05
 			annex_country = { target = SCH transfer_troops = yes }
 		}
 	}
@@ -50,7 +50,7 @@ country_event = {
 			}
 		}
 		CHI = {
-			add_national_unity = -0.05
+			add_stability = -0.05
 		}
 	}
 }

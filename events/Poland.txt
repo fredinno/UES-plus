@@ -17,12 +17,43 @@ country_event = {
 		name = poland.1.a
 		ai_chance = { factor = 10 }
 		add_ideas = fascist_influence
+		add_state_claim = 11
+		add_state_claim = 1054
+		add_state_claim = 1057
+		add_state_claim = 190
+		add_state_claim = 1056
+		add_state_claim = 189
+		add_state_claim = 1053
+		add_state_claim = 1052
+		add_state_claim = 1051
+		add_state_claim = 1060
+		add_state_claim = 1058
+		add_state_claim = 1059
+		add_state_claim = 2391
+		add_state_claim = 1086
+		add_state_claim = 1079
+		add_state_claim = 1090
 		add_state_claim = 198
 		add_state_claim = 199
-		add_state_claim = 201
-		add_state_claim = 1079
-		add_state_claim = 1082
 		add_state_claim = 1088
+		add_state_claim = 1082
+		add_state_claim = 201
+		add_state_claim = 194
+		add_state_claim = 1078
+		add_state_claim = 241
+		add_state_claim = 1075
+		add_state_claim = 1139
+		add_state_claim = 1074
+		add_state_claim = 204
+		add_state_claim = 1077
+		add_state_claim = 206
+		add_state_claim = 1076
+		add_state_claim = 1073
+		add_state_claim = 207
+		add_state_claim = 1072
+		add_state_claim = 210
+		add_state_claim = 1061
+		add_state_claim = 2373
 	}
 
 	option = {
@@ -43,7 +74,22 @@ country_event = {
 	
 	option = {
 		name = poland.2.a
-		ai_chance = { factor = 30 }
+		ai_chance = { 
+			factor = 30 
+			modifier = {
+				factor = 0
+				OR = {
+					any_other_country = {
+						is_major = yes
+						OR = {
+							is_in_faction_with = POL
+							has_guaranteed = POL
+						}
+					}
+					has_idea = anti_soviet_pact
+				}
+			}
+		}
 		effect_tooltip = {
 			SOV = {
 				if = {

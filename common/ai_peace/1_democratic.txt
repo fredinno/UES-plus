@@ -51,7 +51,7 @@ democratic_peace = {
 	liberate = {
 		factor = 1000 #200
 
-		modifier = {#UES: No new countries in Europe except CAT.
+		modifier = {#UES: No new countries in Europe except CAT+ DNZ + VAT + BRI
 			factor = 0
 			FROM = {
 				OR = {
@@ -68,9 +68,19 @@ democratic_peace = {
 					tag = MEC
 					tag = POM
 					tag = HLS
+					tag = ADR
+					tag = LIE
+					tag = MNA
+					tag = SNM
+					tag = BER
+					tag = KOU
+					tag = ULS
+					tag = BAT
 					tag = SIL
 					tag = CZR
 					tag = TRA
+					tag = PRS
+					tag = HNA
 				}
 			}
 		}		
@@ -131,16 +141,6 @@ democratic_peace = {
 				value < 0
 			}
 		}
-		modifier = { #Don't release fascist states in Europe
-			factor = 0
-			FROM = {
-				OR = {
-					tag = CRO
-					tag = SER
-					tag = SLO
-				}
-			}
-		}
 		modifier = { #Don't liberate PRC or warlords.
 			factor = 0
 			FROM = {
@@ -150,8 +150,8 @@ democratic_peace = {
 					tag = GXC
 					tag = YUN
 					tag = SCH #UES: Sichuan
-					tag = SHX
 					tag = XSM
+					tag = SCH
 				}
 			}
 		}
@@ -172,6 +172,7 @@ democratic_peace = {
 			factor = 10
 			FROM = {
 				tag = WGR
+				tag = SRR
 			}
 		}
 		modifier = { 
@@ -189,6 +190,7 @@ democratic_peace = {
 				OR= {
 					tag = MAN
 					tag = MEN
+					tag = LGA
 				}
 			}
 		}		
@@ -210,9 +212,19 @@ democratic_peace = {
 					tag = MEC
 					tag = POM
 					tag = HLS
+					tag = ADR
+					tag = LIE
+					tag = MNA
+					tag = SNM
+					tag = BER
+					tag = KOU
+					tag = ULS
+					tag = BAT
 					tag = SIL
 					tag = CZR
 					tag = TRA
+					tag = PRS
+					tag = HNA
 				}
 			}
 		}		
@@ -340,6 +352,7 @@ democratic_peace = {
 			factor = 10
 			FROM = {
 				tag = WGR
+				tag = SRR
 			}
 		}
 		modifier = { 

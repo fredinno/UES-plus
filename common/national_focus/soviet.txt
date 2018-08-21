@@ -985,7 +985,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 			modifier = {
-				has_government = fascist
+				has_government = fascism
 				factor = 0
 			}
 
@@ -1010,19 +1010,19 @@ focus_tree = {
 		completion_reward = {
 			USA = { 
 				if = {
-					limit = { NOT = { has_government = fascist } }
+					limit = { NOT = { has_government = fascism } }
 					add_opinion_modifier = { target = SOV modifier = anti_fascist_diplomacy_focus } 
 				}
 			}
 			ENG = { 
 				if = {
-					limit = { NOT = { has_government = fascist } }
+					limit = { NOT = { has_government = fascism } }
 					add_opinion_modifier = { target = SOV modifier = anti_fascist_diplomacy_focus } 
 				}
 			}
 			FRA = { 
 				if = {
-					limit = { NOT = { has_government = fascist } }
+					limit = { NOT = { has_government = fascism } }
 					add_opinion_modifier = { target = SOV modifier = anti_fascist_diplomacy_focus } 
 				}
 			}

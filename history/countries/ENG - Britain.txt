@@ -4,7 +4,7 @@ oob = "ENG_1936"
 
 set_research_slots = 4
 
-set_national_unity = 0.6
+set_stability = 0.6
 
 # Starting tech
 set_technology = {
@@ -62,14 +62,6 @@ if = {
 		autonomous_state = autonomy_integrated_puppet
 	}
 	set_autonomy = {
-		target = IRQ
-		autonomous_state = autonomy_dominion
-	}
-	set_autonomy = {
-		target = OMA
-		autonomous_state = autonomy_dominion
-	}
-	set_autonomy = {
 		target = RAJ
 		autonomous_state = autonomy_colony
 		freedom_level = 0.35
@@ -97,7 +89,6 @@ if = {
 	else = {
 		puppet = MAL
 		puppet = RAJ
-		puppet = OMA
 	}
 }
 
@@ -163,7 +154,7 @@ create_country_leader = {
 
 	give_guarantee = POL
 	
-	set_national_unity = 0.8
+	set_stability = 0.8
 	oob = "ENG_1939"
 	set_technology = {
 		fighter1 = 1
@@ -224,8 +215,8 @@ create_country_leader = {
 		improved_machine_tools = 1
 		advanced_machine_tools = 1
 		synth_oil_experiments = 1
-		oil_plant = 1
-		improved_oil_plant = 1
+		oil_processing = 1
+		improved_oil_processing = 1
 		construction1 = 1
 		construction2 = 1
 		construction3 = 1
@@ -268,10 +259,6 @@ add_to_faction = CAN
 add_to_faction = AST
 add_to_faction = NZL
 add_to_faction = SAF
-add_to_faction = OMA
-add_to_faction = NEP
-add_to_faction = BHU
-add_to_faction = IRQ
 
 give_military_access = RAJ
 add_to_faction = RAJ		# Must be after puppet
