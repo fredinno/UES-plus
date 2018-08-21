@@ -1,0 +1,28 @@
+MNA_INF_01 = 
+{
+	name = "Corps des Sapeurs-Pompiers"
+
+	for_countries = { MNA }
+
+	can_use = { 
+		always = yes
+	}
+
+	division_types = { "infantry" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { SPR_INF_01 }
+
+	fallback_name = "%ère Division des Sapeurs-Pompiers"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "%ère Division des Sapeurs-Pompiers" }
+		2 = { "%ère Division des Sapeurs-Pompiers" }
+		3 = { "%ère Division des Sapeurs-Pompiers" }
+		4 = { "%ère Division des Sapeurs-Pompiers" }
+		5 = { "%ère Division des Sapeurs-Pompiers" }
+	}
+}

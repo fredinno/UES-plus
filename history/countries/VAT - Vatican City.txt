@@ -41,16 +41,16 @@ add_ideas = {
 
 create_country_leader = {
 	name = "Pope Pius XII"
-	picture = "gfx/leaders/VAT/His_Holiness_Pope_Pius_XII.dds"
+	picture = "gfx/leaders/Europe/His_Holiness_Pope_Pius_XII.dds"
 	expire = "1965.1.1"
-	ideology = centrism
+	ideology = liberalism
 	traits = {
 		staunch_constitutionalist 
 	}
 }
 create_country_leader = {
 	name = "Pope Pius XII"
-	picture = "gfx/leaders/VAT/His_Holiness_Pope_Pius_XII.dds"
+	picture = "gfx/leaders/Europe/His_Holiness_Pope_Pius_XII.dds"
 	expire = "1965.1.1"
 	ideology = fascism_ideology
 	traits = {
@@ -59,9 +59,18 @@ create_country_leader = {
 }
 create_country_leader = {
 	name = "Pope Pius XII"
-	picture = "gfx/leaders/VAT/His_Holiness_Pope_Pius_XII.dds"
+	picture = "gfx/leaders/Europe/His_Holiness_Pope_Pius_XII.dds"
 	expire = "1965.1.1"
-	ideology = conservatism
+	ideology = marxism
+	traits = {
+		staunch_constitutionalist 
+	}
+}
+create_country_leader = {
+	name = "Pope Pius XII"
+	picture = "gfx/leaders/Europe/His_Holiness_Pope_Pius_XII.dds"
+	expire = "1965.1.1"
+	ideology = despotism
 	traits = {
 		staunch_constitutionalist 
 	}

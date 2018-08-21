@@ -15,7 +15,7 @@ set_politics = {
 		}
 
 		fascism = {
-			popularity = 0
+			popularity = 100
 		}
 		
 		communism = {
@@ -24,11 +24,11 @@ set_politics = {
 		}
 		
 		neutrality = { 
-			popularity = 100
+			popularity = 0
 		}
 	}
 	
-	ruling_party = neutrality
+	ruling_party = fascism
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
@@ -41,28 +41,28 @@ add_ideas = {
 
 create_country_leader = {
 	name = "Carlo Balsimelli"
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_1.dds"
+	picture = "gfx/leaders/Europe/portrait_europe_generic_4.dds"
 	expire = "1965.1.1"
 	ideology = centrism
 }
 
 create_country_leader = {
 	name = "Giuliano Gozi"
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_2.dds"
+	picture = "gfx/leaders/Europe/Giuliano_Gozi.dds"
 	expire = "1965.1.1"
 	ideology = fascism_ideology
 }
 
 create_country_leader = {
 	name = "Ermenegildo Gasperoni"
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_3.dds"
+	picture = "gfx/leaders/Europe/gasperoni.dds"
 	expire = "1965.1.1"
 	ideology = marxism
 }
 
 create_country_leader = {
 	name = "Carlo Balsimelli"
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_2.dds"
+	picture = "gfx/leaders/Europe/portrait_europe_generic_4.dds"
 	expire = "1965.1.1"
 	ideology = conservatism
 }

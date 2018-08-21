@@ -1,0 +1,28 @@
+ADR_INF_01 = 
+{
+	name = "Grup d'Intervenció Policia d'Andorra"
+
+	for_countries = { ADR CAT }
+
+	can_use = { 
+		always = yes
+	}
+
+	division_types = { "infantry" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { SPR_INF_01 }
+
+	fallback_name = "%a Divisió d'Infanteria"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "%a Divisió d'Infanteria" }
+		2 = { "%a Divisió d'Infanteria" }
+		3 = { "%a Divisió d'Infanteria" }
+		4 = { "%a Divisió d'Infanteria" }
+		5 = { "%a Divisió d'Infanteria" }
+	}
+}

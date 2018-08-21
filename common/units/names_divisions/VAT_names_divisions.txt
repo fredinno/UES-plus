@@ -1,0 +1,28 @@
+VAT_INF_01 = 
+{
+	name = "Guardia Svizzera Pontificia"
+
+	for_countries = { VAT }
+
+	can_use = { 
+		always = yes
+	}
+
+	division_types = { "infantry" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { SPR_INF_01 }
+
+	fallback_name = "%a Divisione della Guardia"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "%a Divisione della Guardia" }
+		2 = { "%a Divisione della Guardia" }
+		3 = { "%a Divisione della Guardia" }
+		4 = { "%a Divisione della Guardia" }
+		5 = { "%a Divisione della Guardia" }
+	}
+}

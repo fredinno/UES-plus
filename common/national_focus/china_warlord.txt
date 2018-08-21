@@ -10,7 +10,7 @@ focus_tree = {
 				tag = YUN
 				tag = SIK
 				tag = GXC
-				tag = SIC
+				tag = SCH
 				tag = SHX
 				tag = XSM
 			}
@@ -117,6 +117,41 @@ focus_tree = {
 						name = "Yan Xishan"
 						desc = "POLITICS_YAN XISHAN_DESC"
 						picture = "GFX_portrait_shanxi_portrait_yan_xishan"
+						expire = "1965.1.1"
+						ideology = rexism
+						traits = {
+							#
+						}
+					}
+				}
+				if = {
+					limit = {
+						tag = SCH
+					}
+					create_country_leader = {
+						name = "Liu Xiang"
+						desc = "POLITICS_LIU_XIANG_DESC"
+						picture = "gfx/leaders/SCH/portrait_sichuan_portrait_liu_xiang"
+						expire = "1965.1.1"
+						ideology = anti_revisionism
+						traits = {
+							#
+						}
+					}
+					create_country_leader = {
+						name = "Liu Xiang"
+						desc = "POLITICS_LIU_XIANG_DESC"
+						picture = "gfx/leaders/SCH/portrait_sichuan_portrait_liu_xiang"
+						expire = "1965.1.1"
+						ideology = socialism
+						traits = {
+							#
+						}
+					}
+					create_country_leader = {
+						name = "Liu Xiang"
+						desc = "POLITICS_LIU_XIANG_DESC"
+						picture = "gfx/leaders/SCH/portrait_sichuan_portrait_liu_xiang"
 						expire = "1965.1.1"
 						ideology = rexism
 						traits = {
@@ -289,7 +324,7 @@ focus_tree = {
 				factor = 10
 				OR = {
 					original_tag = GXC
-					original_tag = SIC
+					original_tag = SCH
 					original_tag = YUN
 					original_tag = XSM
 				}
@@ -1447,7 +1482,7 @@ focus_tree = {
 				}
 			}
 			else_if = {
-				limit = { ROOT = { tag = SIC } }
+				limit = { ROOT = { tag = SCH } }
 				create_field_marshal = {
 					name = "Wang Mingzhang"
 					gfx = GFX_portrait_wang_mingzhang				

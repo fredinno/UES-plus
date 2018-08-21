@@ -997,38 +997,6 @@ CRE = {
  color = rgb { 0 55 111 }
  color_ui = rgb { 0 55 111 }
 }
-DVR = {
-	color = rgb { 143 137 52 }
-	color_ui = rgb { 143 137 52 }
-}
-MOS = {
- color = rgb { 226 200 10 }
- color_ui = rgb { 226 200 10 }
-}
-CAU = {
- color = rgb { 0 159 159 }
- color_ui = rgb { 0 159 159 }
-}
-NOV = {
- color = rgb { 0 159 80 }
- color_ui = rgb { 0 159 80 }
-}
-ISB = {
-	color = rgb { 222 241 201 }
-	color_ui = rgb { 222 241 201 }
-}
-BRG = {
-	color = rgb { 128 0 32 }
-	color_ui = rgb { 128 0 32 }
-}
-VCS = {
-	color = rgb { 0 121 121 }
-	color_ui = rgb { 0 121 121 }
-}
-LGA = {
-	color = rgb { 249 253 253 }
-	color_ui = rgb { 249 253 253 }
-}
 
 #reordered ues
 DAG = {
@@ -1482,10 +1450,7 @@ TCF = {
 	color = rgb { 128 0 255 }
 	color_ui = rgb { 128 0 255 }
 }
-UCR = {
-	color = rgb { 186 145 82 }
-	color_ui = rgb { 186 145 82 }
-}
+
 KOU = {
 	color = rgb { 66 73 125 }
 	color_ui = rgb { 66 73 125 }
@@ -1545,10 +1510,6 @@ JAO = {
 RGS = {
 	color = rgb { 56 192 148 }
 	color_ui = rgb { 56 192 148 }
-}
-SAN = {
-	color = rgb { 198 162 121 }
-	color_ui = rgb { 198 162 121 }
 }
 NAT = {
 	color = rgb { 139 106 82 }

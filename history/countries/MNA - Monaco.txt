@@ -11,11 +11,11 @@ set_politics = {
 
 	parties = {
 		democratic = { 
-			popularity = 0
+			popularity = 10
 		}
 
 		fascism = {
-			popularity = 0
+			popularity = 70
 		}
 		
 		communism = {
@@ -24,13 +24,13 @@ set_politics = {
 		}
 		
 		neutrality = { 
-			popularity = 100
+			popularity = 20
 		}
 	}
 	
 	ruling_party = neutrality
-	last_election = "1936.1.1"
-	election_frequency = 48
+	last_election = "1933.2.1"
+	election_frequency = 60
 	elections_allowed = no
 }
 
@@ -41,9 +41,33 @@ add_ideas = {
 
 create_country_leader = {
 	name = "Louis II"
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_2.dds"
+	picture = "gfx/leaders/Europe/Louis_II_Prince_of_Monaco.dds"
 	expire = "1965.1.1"
-	ideology = centrism
+	ideology = despotism
+	traits = {
+	}
+}
+create_country_leader = {
+	name = "Louis II"
+	picture = "gfx/leaders/Europe/Louis_II_Prince_of_Monaco.dds"
+	expire = "1965.1.1"
+	ideology = conservatism
+	traits = {
+	}
+}
+create_country_leader = {
+	name = "Louis II"
+	picture = "gfx/leaders/Europe/Louis_II_Prince_of_Monaco.dds"
+	expire = "1965.1.1"
+	ideology = marxism
+	traits = {
+	}
+}
+create_country_leader = {
+	name = "Louis II"
+	picture = "gfx/leaders/Europe/Louis_II_Prince_of_Monaco.dds"
+	expire = "1965.1.1"
+	ideology = fascism_ideology
 	traits = {
 	}
 }

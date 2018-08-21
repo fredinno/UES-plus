@@ -767,6 +767,7 @@ focus_tree = {
 			modifier = {
 				AND = {
 					MAN = {	exists = no }
+					MEN = { exists = no }
 					PRC = { exists = no }
 				}
 				factor = 0
@@ -863,6 +864,7 @@ focus_tree = {
 			OR = {
 				has_war_with = JAP
 				has_war_with = MAN
+				has_war_with = MEN
 			}
 		}
 
@@ -877,17 +879,31 @@ focus_tree = {
 		completion_reward = {
 			if = {
 				limit = {
-					MAN = {
-						OR = {
-							is_in_faction_with = JAP
-							is_puppet_of = JAP
+						MAN = {
+							OR = {
+								is_in_faction_with = JAP
+								is_puppet_of = JAP
+							}
 						}
-					}
 				}
 				create_wargoal = {
 					type = annex_everything
 					target = MAN
 				}
+
+				limit = {
+						MEN = {
+							OR = {
+								is_in_faction_with = JAP
+								is_puppet_of = JAP
+							}
+						}
+				}
+				create_wargoal = {
+					type = annex_everything
+					target = MEN
+				}
+
 				else = {
 					create_wargoal = {
 						type = annex_everything
@@ -924,6 +940,7 @@ focus_tree = {
 					tag = GXC
 					tag = SHX
 					tag = XSM
+					tag = SCH
 					tag = TIB
 					tag = PRC
 				}
@@ -939,6 +956,7 @@ focus_tree = {
 						OR = {
 							tag = YUN
 							tag = SIK
+							tag = SCH
 							tag = GXC
 							tag = SHX
 							tag = XSM
@@ -980,6 +998,17 @@ focus_tree = {
 				create_wargoal = {
 					type = annex_everything
 					target = TIB
+				}
+			}
+			if = {		
+				limit = {
+					SCH = {
+						has_government = communism
+					}
+				}
+				create_wargoal = {
+					type = annex_everything
+					target = SCH
 				}
 			}
 			if = {
@@ -1083,6 +1112,13 @@ focus_tree = {
 					has_war_with = ROOT
 				}
 			}
+			SCH = {
+				OR = {
+					exists = no
+					is_subject_of = ROOT
+					has_war_with = ROOT
+				}
+			}
 			SHX = {
 				OR = {
 					exists = no
@@ -1119,6 +1155,7 @@ focus_tree = {
 				limit = {
 					OR = {
 						tag = GXC
+						tag = SCH
 						tag = YUN
 						tag = SHX
 						tag = XSM
@@ -1472,21 +1509,53 @@ focus_tree = {
 
 		completion_reward = {
 			if = {
-				limit = { has_full_control_of_state = 613 }
-				613 = { # Shanghai
+				limit = { 
+				has_full_control_of_state = 613 
+				has_full_control_of_state = 782 
+				has_full_control_of_state = 1713
+				has_full_control_of_state = 1714
+				}
+				613 = { 
 					set_building_level = {
 						type = bunker
 						province = {
 							id = 11913 #Nanjing
-							id = 11982 #Nothing
+						}
+						level = 2
+						instant_build = yes
+					}
+				}
+				1714 = { #Zhenjiang
+					set_building_level = {
+						type = bunker
+						province = {
+							id = 11982
+						}
+						level = 2
+						instant_build = yes
+					}
+				}
+				1713 = { #suzhou
+					set_building_level = {
+						type = bunker
+						province = {
 							id = 10076 #Airbase
 							id = 12052
+						}
+						level = 2
+						instant_build = yes
+					}
+				}
+
+				782 = {
+					set_building_level = {
+						type = bunker
+						province = {
 							id = 7014 #Shanghai
 						}
 						level = 2
 						instant_build = yes
 					}
-
 					if = {
 						limit = {
 							any_province_building_level = {
@@ -1528,10 +1597,9 @@ focus_tree = {
 					}					
 				}
 
-				#If not full control, only add forts in provinces bordering the enemy
+				else = {#If not full control, only add forts in provinces bordering the enemy
 				#Only time to throw up some emergency stuff
-				else = {
-					613 = {
+				1713 = {
 						add_building_construction = {
 							type = bunker
 							province = {
@@ -1542,7 +1610,39 @@ focus_tree = {
 							instant_build = yes
 						}
 					}
-
+				613 = {
+						add_building_construction = {
+							type = bunker
+							province = {
+								all_provinces = yes
+								limit_to_border = yes
+							}
+							level = 1
+							instant_build = yes
+						}
+					}
+				782 = {
+						add_building_construction = {
+							type = bunker
+							province = {
+								all_provinces = yes
+								limit_to_border = yes
+							}
+							level = 1
+							instant_build = yes
+						}
+					}
+				1714 = {
+						add_building_construction = {
+							type = bunker
+							province = {
+								all_provinces = yes
+								limit_to_border = yes
+							}
+							level = 1
+							instant_build = yes
+						}
+					}
 				}
 			}
 		}
@@ -1573,6 +1673,11 @@ focus_tree = {
 					has_full_control_of_state = 606
 				}
 			}
+			NOT = {
+				any_enemy_country = {
+					has_full_control_of_state = 782
+				}
+			}
 		}
 
 		bypass = {
@@ -1589,21 +1694,52 @@ focus_tree = {
 
 		completion_reward = {
 			if = {
-				limit = { has_full_control_of_state = 613 }
-				613 = { # Shanghai
+				limit = { 
+				has_full_control_of_state = 613 
+				has_full_control_of_state = 1713
+				has_full_control_of_state = 782
+				 }
+				613 = {
 					set_building_level = {
 						type = bunker
 						province = {
 							id = 11913 #Nanjing
-							id = 11982 #Nothing
+						}
+						level = 3
+						instant_build = yes
+					}
+				}
+				1714 = { #Zhenjiang
+					set_building_level = {
+						type = bunker
+						province = {
+							id = 11982
+						}
+						level = 3
+						instant_build = yes
+					}
+				}
+				1713 = { #suzhou
+					set_building_level = {
+						type = bunker
+						province = {
 							id = 10076 #Airbase
 							id = 12052
+						}
+						level = 3
+						instant_build = yes
+					}
+				}
+
+				782 = {
+					set_building_level = {
+						type = bunker
+						province = {
 							id = 7014 #Shanghai
 						}
 						level = 3
 						instant_build = yes
 					}
-
 					if = {
 						limit = {
 							any_province_building_level = {
@@ -1644,11 +1780,41 @@ focus_tree = {
 						}
 					}					
 				}
-
 				#If not full control, only add forts in provinces bordering the enemy
 				#Only time to throw up some emergency stuff
 				else = {
 					613 = {
+						add_building_construction = {
+							type = bunker
+							province = {
+								all_provinces = yes
+								limit_to_border = yes
+							}
+							level = 1
+							instant_build = yes
+						}
+					1713 = {
+						add_building_construction = {
+							type = bunker
+							province = {
+								all_provinces = yes
+								limit_to_border = yes
+							}
+							level = 1
+							instant_build = yes
+						}
+					}
+					782 = {
+						add_building_construction = {
+							type = bunker
+							province = {
+								all_provinces = yes
+								limit_to_border = yes
+							}
+							level = 1
+							instant_build = yes
+						}
+					1714 = {
 						add_building_construction = {
 							type = bunker
 							province = {
@@ -1663,15 +1829,40 @@ focus_tree = {
 			}
 
 			if = {
-				limit = { has_full_control_of_state = 606 }
-				606 = { # Anhui
+				limit = { 
+				has_full_control_of_state = 1725
+				has_full_control_of_state = 1726
+				has_full_control_of_state = 1728
+				}
+				1725 = { # maanshan
 					set_building_level = {
 						type = bunker
 						province = {
 							id = 1099
-							id = 1171
-							id = 11937
+
+						}
+						level = 2
+						instant_build = yes
+					}								
+				}
+				1726 = { 
+					set_building_level = {
+						type = bunker
+						province = {
+							id = 1171 #xuancheng
+
+						}
+						level = 2
+						instant_build = yes
+					}								
+				}
+				1728 = { 
+					set_building_level = {
+						type = bunker
+						province = {
+							id = 11937 #chizhou
 							id = 10044
+
 						}
 						level = 2
 						instant_build = yes
@@ -1681,7 +1872,29 @@ focus_tree = {
 				#If not full control, only add forts in provinces bordering the enemy
 				#Only time to throw up some emergency stuff
 				else = {
-					606 = {
+					1725 = {
+						add_building_construction = {
+							type = bunker
+							province = {
+								all_provinces = yes
+								limit_to_border = yes
+							}
+							level = 1
+							instant_build = yes
+						}
+					}
+					1728 = {
+						add_building_construction = {
+							type = bunker
+							province = {
+								all_provinces = yes
+								limit_to_border = yes
+							}
+							level = 1
+							instant_build = yes
+						}
+					}
+					1726 = {
 						add_building_construction = {
 							type = bunker
 							province = {
@@ -1697,7 +1910,7 @@ focus_tree = {
 
 			if = {
 				limit = { has_full_control_of_state = 600 }
-				600 = { # Jiangxi
+				1692 = { # Jingde
 					set_building_level = {
 						type = bunker
 						province = {
@@ -2016,6 +2229,13 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
+			602 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
 			605 = {
 				add_building_construction = {
 					type = infrastructure
@@ -2042,9 +2262,7 @@ focus_tree = {
 		}
 
 		available = {
-			NOT = {
-				has_idea = CHI_hyper_inflation_5
-			}
+
 		}
 
 		bypass = {

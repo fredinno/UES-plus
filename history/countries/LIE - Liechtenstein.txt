@@ -11,11 +11,11 @@ set_politics = {
 
 	parties = {
 		democratic = { 
-			popularity = 0
+			popularity = 80
 		}
 
 		fascism = {
-			popularity = 0
+			popularity = 10
 		}
 		
 		communism = {
@@ -24,14 +24,14 @@ set_politics = {
 		}
 		
 		neutrality = { 
-			popularity = 100
+			popularity = 10
 		}
 	}
 	
-	ruling_party = neutrality
-	last_election = "1936.1.1"
+	ruling_party = democratic
+	last_election = "1936.3.1"
 	election_frequency = 48
-	elections_allowed = no
+	elections_allowed = yes
 }
 
 add_ideas = {
@@ -41,16 +41,24 @@ add_ideas = {
 
 create_country_leader = {
 	name = "Franz I"
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_1.dds"
+	picture = "gfx/leaders/Europe/Franz_I_von_Liechtenstein.dds"
 	expire = "1965.1.1"
-	ideology = centrism
+	ideology = despotism
+	traits = {
+	}
+}
+create_country_leader = {
+	name = "Franz I"
+	picture = "gfx/leaders/Europe/Franz_I_von_Liechtenstein.dds"
+	expire = "1965.1.1"
+	ideology = conservatism
 	traits = {
 	}
 }
 
 create_country_leader = {
 	name = "Alfons Goop"
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_3.dds"
+	picture = "gfx/leaders/Europe/s-goop-alfons-wohlwend.dds"
 	expire = "1965.1.1"
 	ideology = nazism
 	traits = {

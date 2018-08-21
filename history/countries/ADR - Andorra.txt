@@ -11,37 +11,58 @@ set_politics = {
 
 	parties = {
 		democratic = { 
-			popularity = 0
+			popularity = 80
 		}
 
 		fascism = {
-			popularity = 0
+			popularity = 5
 		}
 		
 		communism = {
-			popularity = 0
+			popularity = 15
 			#banned = no #default is no
 		}
 		
 		neutrality = { 
-			popularity = 100
+			popularity = 0
 		}
 	}
 	
-	ruling_party = neutrality
-	last_election = "1936.1.1"
-	election_frequency = 48
-	elections_allowed = no
+	ruling_party = democratic
+	last_election = "1935.1.1"
+	election_frequency = 36
+	elections_allowed = yes
 }
 
 add_ideas = {
 	neutrality_idea	
-	limited_conscription
+	volunteer_only
 }
 
 create_country_leader = {
 	name = "Justí Guitart i Vilardebó"
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_5.dds"
+	picture = "gfx/leaders/Europe/justi_guitart_i_vilardebo.dds"
+	expire = "1965.1.1"
+	ideology = liberalism
+}
+
+create_country_leader = {
+	name = "Justí Guitart i Vilardebó"
+	picture = "gfx/leaders/Europe/justi_guitart_i_vilardeb.dds"
 	expire = "1965.1.1"
 	ideology = centrism
+}
+
+create_country_leader = {
+	name = "Justí Guitart i Vilardebó"
+	picture = "gfx/leaders/Europe/justi_guitart_i_vilardebo.dds"
+	expire = "1965.1.1"
+	ideology = anarchist_communism
+}
+
+create_country_leader = {
+	name = "Justí Guitart i Vilardebó"
+	picture = "gfx/leaders/Europe/justi_guitart_i_vilardebo.dds"
+	expire = "1965.1.1"
+	ideology = fascism_ideology
 }

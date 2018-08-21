@@ -616,7 +616,10 @@ shared_focus = {
 			}
 			if = {
 				limit = {
-					tag = YUN
+					OR = {
+						tag = YUN
+						tag = SCH
+					}
 				}
 				division_template = {
 					name = "Experimental Mechanised Division"
@@ -1364,7 +1367,7 @@ shared_focus = {
 	}
 
 	available = {
-		all_other_country = { NOT = { has_completed_focus = CHI_guarantee_the_hanoi_route } }
+		all_other_country { NOT = { has_completed_focus = CHI_guarantee_the_hanoi_route } }
 		FRA_will_support = yes
 		325 = { #Yunnan
 			CONTROLLER = {
@@ -1745,6 +1748,17 @@ shared_focus = {
 			}
 		}
 		if = {
+			limit = { NOT = { original_tag = GXC } }
+			SCH = {
+				OR = {
+					exists = no
+					has_war_with = ROOT
+					is_subject_of = ROOT
+					ROOT = { has_wargoal_against = PREV }
+				}
+			}
+		}
+		if = {
 			limit = { NOT = { original_tag = YUN } }
 			YUN = {
 				OR = {
@@ -1908,24 +1922,10 @@ shared_focus = {
 	}
 
 	completion_reward = {
-		if = {
-			limit = {
-				322 = { is_owned_and_controlled_by = TIB }
-			}
-			ROOT = {
-				create_wargoal = {
-					type = take_state_focus
-					target = TIB
-					generator = { 322 }
-				}
-			}
-		}
-		else = {
 			create_wargoal = {
 				type = annex_everything
 				target = TIB				
 			}
-		}
 	}
 }
 
@@ -1987,7 +1987,7 @@ shared_focus = {
 	}
 
 	available = {
-		not = {
+		not = { 
 			is_in_faction_with = MON
 		}
 	}
@@ -2017,7 +2017,7 @@ shared_focus = {
 				create_wargoal = {
 					type = take_state_focus
 					target = MON
-					generator = { 330 }
+					generator = { 330 1863 1862 1861 1860 1873 1865 1864 1872 1866 1871 1870 1867 1868 1869 329 1859 }
 				}
 			}
 		}
@@ -2048,6 +2048,7 @@ shared_focus = {
 	available = {
 		is_subject = no
 		NOT = { has_government = fascism }
+		#TODO_WTT_CD check for flag if Chinese faction exists
 	}
 
 	bypass = {
@@ -2181,30 +2182,39 @@ shared_focus = {
 			activate_mission_tooltip = CHI_release_korea
 		}
 		else = {
-			527 = {
+			525 = {
 				CONTROLLER = {
 					ROOT = {
 						create_wargoal = {
 							type = take_state_focus
 							target = PREV
-							generator = { 527 }
+							generator = { 527 1795 1793 1794 1797 1798 1799 1801 1800 525 1796 1802 1810 1809 1803 1805 1804 1809 1808 1807 1806 }
 						}
 					}
 				}
 			}
-			#Don't give wargoal on same country twice
-			if = {
-				limit = {
-					NOT = { 525 = { CONTROLLER = { controls_state = 527 } } }
-				}
-				525 = {
-					CONTROLLER = {
-						ROOT = {
-							create_wargoal = {
-								type = take_state_focus
-								target = PREV
-								generator = { 525 }
+		}
+				#Don't give wargoal on same country twice
+		if = {
+			limit = {
+				NOT = {
+					525 = {
+						CONTROLLER = {
+							OR = {
+								controls_state = 527
+								tag = ROOT								
 							}
+						}
+					}
+				}
+			}
+			525 = {
+				CONTROLLER = {
+					ROOT = {
+						create_wargoal = {
+							type = take_state_focus
+							target = PREV
+							generator = { 525 }
 						}
 					}
 				}
@@ -2397,7 +2407,7 @@ shared_focus = {
 				create_wargoal = {
 					type = take_state_focus
 					target = PREV
-					generator = { 671 670 286 741 } #TODO_WTT_CODE - ignore states that are not owned or controlled by country
+					generator = { 671 670 286 741 1821 1522 1523 1512 1514 1511 1513 1524 1525 2406 1510 1526 1509 1527 1528 1508 1529 1507 1530 1531 1532 1533 1534 1535 1516 1534 1535 1536 1537 1538 1539 1518 1516 1515 1517 1520 2365 1519 } #TODO_WTT_CODE - ignore states that are not owned or controlled by country
 				}
 			}
 		}
@@ -2493,7 +2503,7 @@ shared_focus = {
 					create_wargoal = {
 						type = take_state_focus
 						target = PREV
-						generator = { 527 }
+						generator = { 527 1795 1793 1794 1797 1798 1799 1801 1800 525 1796 1802 1810 1809 1803 1805 1804 1809 1808 1807 1806 }
 					}
 				}
 			}
@@ -2631,7 +2641,7 @@ shared_focus = {
 			is_subject = no
 			is_subject_of = ENG
 		}
-		all_other_country = { NOT = { has_completed_focus = CHI_burma_road } }
+		all_other_country { NOT = { has_completed_focus = CHI_burma_road } }
 		ENG_will_support = yes
 		325 = { #Yunnan
 			CONTROLLER = {
@@ -2722,7 +2732,7 @@ shared_focus = {
 			is_subject = no
 			is_subject_of = ENG
 		}
-		all_other_country = { NOT = { has_completed_focus = CHI_ledo_road } }
+		all_other_country { NOT = { has_completed_focus = CHI_ledo_road } }
 		ENG_will_support = yes
 		325 = { #Yunnan
 			CONTROLLER = {
@@ -3008,7 +3018,7 @@ shared_focus = {
 			is_subject = no
 			is_subject_of = ENG
 		}
-		all_other_country = { NOT = { has_completed_focus = CHI_the_hump } }
+		all_other_country { NOT = { has_completed_focus = CHI_the_hump } }
 		OR = {
 			AND = {
 				has_completed_focus = CHI_british_cooperation
@@ -3688,10 +3698,8 @@ shared_focus = {
 	}
 
 	available = {
-		OR = {
-			JAP = { has_government = ROOT }
-			JAP_will_support = yes
-		}
+		JAP = { has_government = ROOT }
+		JAP_will_support = yes
 		NOT = { has_wargoal_against = JAP }
 		NOT = { has_war_with = JAP }
 	}

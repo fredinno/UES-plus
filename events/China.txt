@@ -15,7 +15,7 @@ country_event = {
 	
 	option = { # Breaking point!
 		name = china.1.a
-		ai_chance = { factor = 85 }
+		ai_chance = { factor = 90 }
 		effect_tooltip = {
 			JAP = {
 				add_war_support = 0.05
@@ -36,13 +36,14 @@ country_event = {
 	}
 	option = { # Make more concessions
 		name = china.1.b
-		ai_chance = { factor = 15 }
+		ai_chance = { factor = 10 }
 		JAP = {
 			set_truce = { target = ROOT days = 180 }
 			effect_tooltip = {
 				transfer_state = 608
 				transfer_state = 597
 				transfer_state = 614
+				add_state_claim = 613
 				transfer_state = 1730
 				transfer_state = 1731
 				transfer_state = 1732
@@ -466,8 +467,12 @@ country_event = {
 		has_opinion_modifier = hostile_status
 		OR = {
 			divisions_in_state = {
-			state = 779
-			size > 0
+				state = 1677
+				size > 0
+			}
+			divisions_in_state = {
+				state = 779
+				size > 0
 			}
 			divisions_in_state = {
 				state = 1621
@@ -476,7 +481,7 @@ country_event = {
 		}
 		PRC = {
 			divisions_in_state = {	
-				state = 1690	
+				state = 622	
 				size > 0	
 			}	
 		}	
@@ -494,25 +499,36 @@ country_event = {
 	
 	option = {
 		name = china.13.a
-		if = {
-			limit = {
-				divisions_in_state = {
-					state = 779
-					size > 0
+		CHI = {
+			if = {
+				limit = {
+					divisions_in_state = {
+						state = 1621	
+						size > 0
+					}
 				}
+				1621 = { set_border_war = yes }
 			}
-			779 = { set_border_war = yes }
-		}
-		if = {
-			limit = {
-				divisions_in_state = {
-					state = 1621
-					size > 0
+			if = {
+				limit = {
+					divisions_in_state = {
+						state = 779
+						size > 0
+					}
 				}
+				779 = { set_border_war = yes }
 			}
-			1621 = { set_border_war = yes }
+			if = {
+				limit = {
+					divisions_in_state = {
+						state = 1677
+						size > 0
+					}
+				}
+				1677 = { set_border_war = yes }
+			}
 		}
-		1690 = { set_border_war = yes }
+		622 = { set_border_war = yes }
 	}
 	option = {
 		name = china.13.b
@@ -536,13 +552,25 @@ country_event = {
 
 	immediate = {
 		hidden_effect = {
+			1621 = {
+				if = {
+					limit = { is_border_conflict = yes }
+					set_border_war = no
+				}
+			}
+			605 = {
+				if = {
+					limit = { is_border_conflict = yes }
+					set_border_war = no
+				}
+			}
 			779 = {
 				if = {
 					limit = { is_border_conflict = yes }
 					set_border_war = no
 				}
 			}
-			1621 = {
+			1677 = {
 				if = {
 					limit = { is_border_conflict = yes }
 					set_border_war = no
@@ -597,7 +625,7 @@ country_event = {
 
 	immediate = {
 		hidden_effect = {
-			779 = {
+			605 = {
 				if = {
 					limit = { is_border_conflict = yes }
 					set_border_war = no
@@ -610,6 +638,18 @@ country_event = {
 				}
 			}
 			1690 = {
+				if = {
+					limit = { is_border_conflict = yes }
+					set_border_war = no
+				}
+			}
+			779 = {
+				if = {
+					limit = { is_border_conflict = yes }
+					set_border_war = no
+				}
+			}
+			1677 = {
 				if = {
 					limit = { is_border_conflict = yes }
 					set_border_war = no
@@ -660,6 +700,15 @@ country_event = {
 				if = {
 					limit = {
 						divisions_in_state = {
+							state = 1621
+							size > 0
+						}
+					}
+					1621 = { set_border_war = yes }
+				}
+				if = {
+					limit = {
+						divisions_in_state = {
 							state = 779
 							size > 0
 						}
@@ -669,11 +718,11 @@ country_event = {
 				if = {
 					limit = {
 						divisions_in_state = {
-							state = 1621
+							state = 1677
 							size > 0
 						}
 					}
-					1621 = { set_border_war = yes }
+					1677 = { set_border_war = yes }
 				}
 			}
 		}
@@ -697,7 +746,7 @@ country_event = {
 		has_war_with = JAP
 		JAP = { has_offensive_war = yes }
 		has_defensive_war = yes
-		NOT = { owns_state = 1690 }		
+		NOT = { owns_state = 622 }		
 		NOT = { has_global_flag = CHI_unite }
 		NOT = { has_global_flag = CHI_no_national_front_flag }
 	}
@@ -1199,69 +1248,22 @@ country_event = {
 		}
 		custom_effect_tooltip = china.107_tt
 		hidden_effect = {
-			PRC = {
-				transfer_state = 610
-				transfer_state = 611
-				transfer_state = 612
-				transfer_state = 714
-				transfer_state = 715
-				transfer_state = 717
-				transfer_state = 780
-				transfer_state = 1730
-				transfer_state = 1731
-				transfer_state = 1733
-				transfer_state = 1734
-				transfer_state = 1735
-				transfer_state = 1736
-				transfer_state = 1737
-				transfer_state = 1738
-				transfer_state = 1739
-				transfer_state = 1740
-				transfer_state = 1741
-				transfer_state = 1743
-				transfer_state = 1744
-				transfer_state = 1745
-				transfer_state = 1746
-				transfer_state = 1749
-				transfer_state = 1750
-				transfer_state = 1751
-				transfer_state = 1752
-				transfer_state = 1753
-				transfer_state = 1754
-				transfer_state = 1755
-				transfer_state = 1756
-				transfer_state = 1757
-				transfer_state = 1758
-				transfer_state = 1759
-				transfer_state = 1762
-				transfer_state = 1764
-				transfer_state = 1765
-				transfer_state = 1766
-				transfer_state = 1768
-				transfer_state = 1769
-				transfer_state = 1770
-				transfer_state = 1771
-				transfer_state = 1772
-				transfer_state = 1773
-				transfer_state = 1774
-				transfer_state = 1775
-				transfer_state = 1776
-				transfer_state = 1777
-				transfer_state = 1779
-				transfer_state = 1780
-				transfer_state = 1781
-				transfer_state = 1782
-				transfer_state = 1783
-				transfer_state = 1784
-				transfer_state = 1785
-				transfer_state = 1786
-				transfer_state = 1787
-				transfer_state = 1788
-				transfer_state = 1789
-				transfer_state = 1790
-				transfer_state = 1791
-				transfer_state = 1792
-			}
+			every_state = {
+				limit = {
+					controller = {
+						original_tag = CHI
+						is_puppet_of = CHI
+					}
+					is_core_of = PRC
+					OR = {
+						region = 143
+						region = 155
+					}
+					NOT = { state = 525 }
+					NOT = { state = 527 }				
+				}
+				ROOT = { transfer_state = PREV }
+			}			
 		}
 	}
 }
@@ -1441,6 +1443,7 @@ country_event = {
 	mean_time_to_happen = {
 		days = 10
 	}
+
 	#Move to Beijing
 	option = {
 		name = china.204.a
@@ -1471,8 +1474,11 @@ country_event = {
 		trigger = {
 			owns_state = 613
 		}
-		set_capital = 613
+		custom_effect_tooltip = CHI_nanjing_tt
 		PRC = { set_cosmetic_tag = PRC_EST }
+		hidden_effect = {
+			set_capital = 613
+		}
 	}
 
 	#Stay where you are
