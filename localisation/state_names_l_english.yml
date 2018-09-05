@@ -135,7 +135,7 @@
  STATE_134:0 "Connaught"
  STATE_135:0 "Munster"
  STATE_136:0 "Aberdeenshire"
- STATE_137:0 "Crimea"
+ STATE_137:1 "Sevastopol"
  STATE_138:0 "Scania"
  STATE_139:0 "Kalmar"
  STATE_140:0 "Västergötland"
@@ -2430,3 +2430,4 @@
  STATE_2429:0 "Cadca"
  STATE_2430:0 "French Navarre"
  STATE_2431:0 "Mandera"
+ STATE_2432:0 "S. Yakutsk"

@@ -10,4 +10,9 @@
 
 opinion_modifiers = {
 	GER_first_vienna_award_GER_refused = { value = -10 }
+	given_land = { value = 100 }
+	refused_land = { value = -100 }
+	catholics_angered_100_percent = { value = -100 }
+	catholics_angered_75_percent = { value = -60 }
+	catholics_angered_50_percent = { value = -20 }
 }	

@@ -1,0 +1,22 @@
+state={
+	id=2432
+	name="STATE_2432"
+	
+	history = {
+		owner = SOV
+		add_core_of = SOV
+		add_core_of = ESB
+		add_core_of = SAH
+
+		buildings = {
+			infrastructure = 2
+
+		}
+	}
+	provinces={
+		1748 1795 1878 4726 4752 4798 4821 4855 7746 7844 7889 10608 10667 10701 10714 12565 12623 12694 
+	}
+	manpower=236137
+	state_category = wasteland
+	buildings_max_level_factor=1.000
+}

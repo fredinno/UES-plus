@@ -1013,7 +1013,7 @@ country_event = {
 		create_wargoal = {
 			type = take_state_focus
 			target = ROM
-			generator = { 76 }
+			generator = { 1329 1330 1331 1332 76 1333 }
 		}
 	}
 }
@@ -3643,9 +3643,18 @@ country_event = {
 		}
 		GER = { puppet = TUR }
 		SOV = {
-			transfer_state = 354
+			if = { limit = { controls_state = 1385 } 
+				transfer_state = 1385
+			}
+			if = { limit = { controls_state = 353 }
 			transfer_state = 353
-			transfer_state = 352
+			}
+			if = { limit = { controls_state = 1387 }
+			transfer_state = 1387
+			}
+			if = { limit = { controls_state = 1386 }
+			transfer_state = 1386
+			}
 		}
 		hidden_effect = {
 			news_event = { hours = 6 id = news.201 }
@@ -3771,6 +3780,30 @@ country_event = {
 			if = {
 				limit = { GER = { owns_state = 73 } }
 				transfer_state = 73
+			}
+			if = {
+				limit = { GER = { owns_state = 2429 } }
+				transfer_state = 2429
+			}
+			if = {
+				limit = { GER = { owns_state = 72 } }
+				transfer_state = 72
+			}
+			if = {
+				limit = { GER = { owns_state = 1282 } }
+				transfer_state = 1282
+			}
+			if = {
+				limit = { GER = { owns_state = 1279 } }
+				transfer_state = 1279
+			}
+			if = {
+				limit = { GER = { owns_state = 1280 } }
+				transfer_state = 1280
+			}
+			if = {
+				limit = { GER = { owns_state = 1281 } }
+				transfer_state = 1281
 			}
 			if = {
 				limit = { GER = { owns_state = 664 } }

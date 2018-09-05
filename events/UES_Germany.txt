@@ -1,0 +1,1494 @@
+﻿###########################
+# German Events-UES++
+###########################
+
+add_namespace = germany
+
+country_event = { #release Turkestan event- for decision
+	id = germany_UES.0
+	title = germany_UES.0.t
+	desc = germany_UES.0.d
+	picture = GFX_report_event_generic_conference.dds
+
+	is_triggered_only = yes
+
+	option = {
+		name = germany_UES.0.a #release Turkestan as a RK
+			release = TKS
+			ai_will_do = {
+				factor = 0
+			}
+			TKS = {
+				transfer_state = 1571
+				transfer_state = 1573
+				transfer_state = 405
+				transfer_state = 1572
+				transfer_state = 1569
+				transfer_state = 1568
+				transfer_state = 732
+				transfer_state = 1570
+				transfer_state = 586
+				transfer_state = 1581
+				transfer_state = 1585
+				transfer_state = 589
+				transfer_state = 1584
+				transfer_state = 588
+				transfer_state = 1582
+				transfer_state = 590
+				transfer_state = 1588
+				transfer_state = 1587
+				transfer_state = 1586
+				transfer_state = 583
+				transfer_state = 1596
+				transfer_state = 404
+				transfer_state = 1597
+				transfer_state = 1589
+				transfer_state = 1590
+				transfer_state = 1577
+				transfer_state = 1578
+				transfer_state = 1574
+				transfer_state = 1591
+				transfer_state = 1592
+				transfer_state = 1579
+				transfer_state = 585
+				transfer_state = 1564
+				transfer_state = 1563
+				transfer_state = 1562
+				transfer_state = 1584
+				transfer_state = 1561
+				transfer_state = 1565
+				transfer_state = 1560
+				transfer_state = 1580
+				transfer_state = 1595
+				transfer_state = 587
+				transfer_state = 1593
+				transfer_state = 1594
+				transfer_state = 402
+				transfer_state = 788
+				transfer_state = 742
+				transfer_state = 1567
+				transfer_state = 1566
+				transfer_state = 654
+				transfer_state = 1859
+				transfer_state = 1600
+				transfer_state = 1599
+				transfer_state = 1598
+				transfer_state = 407
+				transfer_state = 406
+				transfer_state = 1576
+				transfer_state = 1575
+
+				1571 = { add_core_of = PREV }
+				1573 = { add_core_of = PREV }
+				405 = { add_core_of = PREV }
+				1572 = { add_core_of = PREV }
+				1569 = { add_core_of = PREV }
+				1568 = { add_core_of = PREV }
+				732 = { add_core_of = PREV }
+				1570 = { add_core_of = PREV }
+				586 = { add_core_of = PREV }
+				1581 = { add_core_of = PREV }
+				1585 = { add_core_of = PREV }
+				589 = { add_core_of = PREV }
+				1584 = { add_core_of = PREV }
+				588 = { add_core_of = PREV }
+				1582 = { add_core_of = PREV }
+				590 = { add_core_of = PREV }
+				1588 = { add_core_of = PREV }
+				1587 = { add_core_of = PREV }
+				1586 = { add_core_of = PREV }
+				583 = { add_core_of = PREV }
+				1596 = { add_core_of = PREV }
+				404 = { add_core_of = PREV }
+				1597 = { add_core_of = PREV }
+				1589 = { add_core_of = PREV }
+				1590 = { add_core_of = PREV }
+				1577 = { add_core_of = PREV }
+				1578 = { add_core_of = PREV }
+				1574 = { add_core_of = PREV }
+				1591 = { add_core_of = PREV }
+				1592 = { add_core_of = PREV }
+				1579 = { add_core_of = PREV }
+				585 = { add_core_of = PREV }
+				1564 = { add_core_of = PREV }
+				1563 = { add_core_of = PREV }
+				1562 = { add_core_of = PREV }
+				1561 = { add_core_of = PREV }
+				1565 = { add_core_of = PREV }
+				1560 = { add_core_of = PREV }
+				1580 = { add_core_of = PREV }
+				1595 = { add_core_of = PREV }
+				587 = { add_core_of = PREV }
+				1593 = { add_core_of = PREV }
+				1594 = { add_core_of = PREV }
+				402 = { add_core_of = PREV }
+				788 = { add_core_of = PREV }
+				742 = { add_core_of = PREV }
+				1567 = { add_core_of = PREV }
+				1566 = { add_core_of = PREV }
+				654 = { add_core_of = PREV }
+				1859 = { add_core_of = PREV }
+				1600 = { add_core_of = PREV }
+				1599 = { add_core_of = PREV }
+				1598 = { add_core_of = PREV }
+				407 = { add_core_of = PREV }
+				406 = { add_core_of = PREV }
+				1576 = { add_core_of = PREV }
+				1575 = { add_core_of = PREV }
+
+				add_state_claim = 1546
+				add_state_claim = 652
+				add_state_claim = 651
+				add_state_claim = 2428
+				add_state_claim = 251
+				add_state_claim = 1158
+				add_state_claim = 329
+				add_state_claim = 582
+
+				GER = {
+					puppet = PREV
+					set_autonomy = { target = PREV autonomy_state = autonomy_integrated_puppet }
+				}
+				set_cosmetic_tag = TKS_reichskommissariat
+				create_country_leader = {
+					name = "Wilhelm Murr"
+					desc = "POLITICS_WILGHELM_MURR_DESC"
+					picture = "gfx/leaders/Europe/Portrait_Europe_Generic_6.dds"
+					expire = "1965.1.1"
+					ideology = nazism
+					traits = {
+					}
+				}
+			}
+			set_global_flag = TKS_exists
+	}
+	option = {
+		name = germany_UES.0.b #release Turkestan as a puppet
+		ai_will_do = {
+			factor = 4000
+		}
+		release = TKS
+			TKS = {
+				transfer_state = 1571
+				transfer_state = 1573
+				transfer_state = 405
+				transfer_state = 1572
+				transfer_state = 1569
+				transfer_state = 1568
+				transfer_state = 732
+				transfer_state = 1570
+				transfer_state = 586
+				transfer_state = 1581
+				transfer_state = 1585
+				transfer_state = 589
+				transfer_state = 1584
+				transfer_state = 588
+				transfer_state = 1582
+				transfer_state = 590
+				transfer_state = 1588
+				transfer_state = 1587
+				transfer_state = 1586
+				transfer_state = 583
+				transfer_state = 1596
+				transfer_state = 404
+				transfer_state = 1597
+				transfer_state = 1589
+				transfer_state = 1590
+				transfer_state = 1577
+				transfer_state = 1578
+				transfer_state = 1574
+				transfer_state = 1591
+				transfer_state = 1592
+				transfer_state = 1579
+				transfer_state = 585
+				transfer_state = 1564
+				transfer_state = 1563
+				transfer_state = 1562
+				transfer_state = 1584
+				transfer_state = 1561
+				transfer_state = 1565
+				transfer_state = 1560
+				transfer_state = 1580
+				transfer_state = 1595
+				transfer_state = 587
+				transfer_state = 1593
+				transfer_state = 1594
+				transfer_state = 402
+				transfer_state = 788
+				transfer_state = 742
+				transfer_state = 1567
+				transfer_state = 1566
+				transfer_state = 654
+				transfer_state = 1859
+				transfer_state = 1600
+				transfer_state = 1599
+				transfer_state = 1598
+				transfer_state = 407
+				transfer_state = 406
+				transfer_state = 1576
+				transfer_state = 1575
+
+				1571 = { add_core_of = PREV }
+				1573 = { add_core_of = PREV }
+				405 = { add_core_of = PREV }
+				1572 = { add_core_of = PREV }
+				1569 = { add_core_of = PREV }
+				1568 = { add_core_of = PREV }
+				732 = { add_core_of = PREV }
+				1570 = { add_core_of = PREV }
+				586 = { add_core_of = PREV }
+				1581 = { add_core_of = PREV }
+				1585 = { add_core_of = PREV }
+				589 = { add_core_of = PREV }
+				1584 = { add_core_of = PREV }
+				588 = { add_core_of = PREV }
+				1582 = { add_core_of = PREV }
+				590 = { add_core_of = PREV }
+				1588 = { add_core_of = PREV }
+				1587 = { add_core_of = PREV }
+				1586 = { add_core_of = PREV }
+				583 = { add_core_of = PREV }
+				1596 = { add_core_of = PREV }
+				404 = { add_core_of = PREV }
+				1597 = { add_core_of = PREV }
+				1589 = { add_core_of = PREV }
+				1590 = { add_core_of = PREV }
+				1577 = { add_core_of = PREV }
+				1578 = { add_core_of = PREV }
+				1574 = { add_core_of = PREV }
+				1591 = { add_core_of = PREV }
+				1592 = { add_core_of = PREV }
+				1579 = { add_core_of = PREV }
+				585 = { add_core_of = PREV }
+				1564 = { add_core_of = PREV }
+				1563 = { add_core_of = PREV }
+				1562 = { add_core_of = PREV }
+				1561 = { add_core_of = PREV }
+				1565 = { add_core_of = PREV }
+				1560 = { add_core_of = PREV }
+				1580 = { add_core_of = PREV }
+				1595 = { add_core_of = PREV }
+				587 = { add_core_of = PREV }
+				1593 = { add_core_of = PREV }
+				1594 = { add_core_of = PREV }
+				402 = { add_core_of = PREV }
+				788 = { add_core_of = PREV }
+				742 = { add_core_of = PREV }
+				1567 = { add_core_of = PREV }
+				1566 = { add_core_of = PREV }
+				654 = { add_core_of = PREV }
+				1859 = { add_core_of = PREV }
+				1600 = { add_core_of = PREV }
+				1599 = { add_core_of = PREV }
+				1598 = { add_core_of = PREV }
+				407 = { add_core_of = PREV }
+				406 = { add_core_of = PREV }
+				1576 = { add_core_of = PREV }
+				1575 = { add_core_of = PREV }
+
+				add_state_claim = 1546
+				add_state_claim = 652
+				add_state_claim = 651
+				add_state_claim = 2428
+				add_state_claim = 251
+				add_state_claim = 1158
+				add_state_claim = 329
+				add_state_claim = 582
+
+				GER = {
+					puppet = PREV
+					set_autonomy = { target = PREV autonomy_state = autonomy_puppet }
+				}
+				create_country_leader = {
+					name = "Nuri Killigil"
+					desc = "POLITICS_NURI_KILLIGIL_DESC"
+					picture = "gfx/leaders/TUR/Portrait_Turkey_Sefik_Husnu.dds"
+					expire = "1965.1.1"
+					ideology = nazism
+					traits = {
+					}
+				}
+			}
+			set_global_flag = TKS_exists
+	}
+	option = {
+		name = germany_UES.0.c #give Turkestan to Turkey as a puppet
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		trigger = {
+			NOT = { 
+				country_exists = TUR
+				TUR = { is_in_faction_with = GER }
+			 }
+		}
+		TUR = {
+			add_opinion_modifier = {
+			target = GER
+			modifier = given_land
+			}
+
+			release = TKS
+			TKS = {
+				transfer_state = 1571
+				transfer_state = 1573
+				transfer_state = 405
+				transfer_state = 1572
+				transfer_state = 1569
+				transfer_state = 1568
+				transfer_state = 732
+				transfer_state = 1570
+				transfer_state = 586
+				transfer_state = 1581
+				transfer_state = 1585
+				transfer_state = 589
+				transfer_state = 1584
+				transfer_state = 588
+				transfer_state = 1582
+				transfer_state = 590
+				transfer_state = 1588
+				transfer_state = 1587
+				transfer_state = 1586
+				transfer_state = 583
+				transfer_state = 1596
+				transfer_state = 404
+				transfer_state = 1597
+				transfer_state = 1589
+				transfer_state = 1590
+				transfer_state = 1577
+				transfer_state = 1578
+				transfer_state = 1574
+				transfer_state = 1591
+				transfer_state = 1592
+				transfer_state = 1579
+				transfer_state = 585
+				transfer_state = 1564
+				transfer_state = 1563
+				transfer_state = 1562
+				transfer_state = 1584
+				transfer_state = 1561
+				transfer_state = 1565
+				transfer_state = 1560
+				transfer_state = 1580
+				transfer_state = 1595
+				transfer_state = 587
+				transfer_state = 1593
+				transfer_state = 1594
+				transfer_state = 402
+				transfer_state = 788
+				transfer_state = 742
+				transfer_state = 1567
+				transfer_state = 1566
+				transfer_state = 654
+				transfer_state = 1859
+				transfer_state = 1600
+				transfer_state = 1599
+				transfer_state = 1598
+				transfer_state = 407
+				transfer_state = 406
+				transfer_state = 1576
+				transfer_state = 1575
+
+				1571 = { add_core_of = PREV }
+				1573 = { add_core_of = PREV }
+				405 = { add_core_of = PREV }
+				1572 = { add_core_of = PREV }
+				1569 = { add_core_of = PREV }
+				1568 = { add_core_of = PREV }
+				732 = { add_core_of = PREV }
+				1570 = { add_core_of = PREV }
+				586 = { add_core_of = PREV }
+				1581 = { add_core_of = PREV }
+				1585 = { add_core_of = PREV }
+				589 = { add_core_of = PREV }
+				1584 = { add_core_of = PREV }
+				588 = { add_core_of = PREV }
+				1582 = { add_core_of = PREV }
+				590 = { add_core_of = PREV }
+				1588 = { add_core_of = PREV }
+				1587 = { add_core_of = PREV }
+				1586 = { add_core_of = PREV }
+				583 = { add_core_of = PREV }
+				1596 = { add_core_of = PREV }
+				404 = { add_core_of = PREV }
+				1597 = { add_core_of = PREV }
+				1589 = { add_core_of = PREV }
+				1590 = { add_core_of = PREV }
+				1577 = { add_core_of = PREV }
+				1578 = { add_core_of = PREV }
+				1574 = { add_core_of = PREV }
+				1591 = { add_core_of = PREV }
+				1592 = { add_core_of = PREV }
+				1579 = { add_core_of = PREV }
+				585 = { add_core_of = PREV }
+				1564 = { add_core_of = PREV }
+				1563 = { add_core_of = PREV }
+				1562 = { add_core_of = PREV }
+				1561 = { add_core_of = PREV }
+				1565 = { add_core_of = PREV }
+				1560 = { add_core_of = PREV }
+				1580 = { add_core_of = PREV }
+				1595 = { add_core_of = PREV }
+				587 = { add_core_of = PREV }
+				1593 = { add_core_of = PREV }
+				1594 = { add_core_of = PREV }
+				402 = { add_core_of = PREV }
+				788 = { add_core_of = PREV }
+				742 = { add_core_of = PREV }
+				1567 = { add_core_of = PREV }
+				1566 = { add_core_of = PREV }
+				654 = { add_core_of = PREV }
+				1859 = { add_core_of = PREV }
+				1600 = { add_core_of = PREV }
+				1599 = { add_core_of = PREV }
+				1598 = { add_core_of = PREV }
+				407 = { add_core_of = PREV }
+				406 = { add_core_of = PREV }
+				1576 = { add_core_of = PREV }
+				1575 = { add_core_of = PREV }
+
+				add_state_claim = 1546
+				add_state_claim = 652
+				add_state_claim = 651
+				add_state_claim = 2428
+				add_state_claim = 251
+				add_state_claim = 1158
+				add_state_claim = 329
+				add_state_claim = 582
+
+				TUR = {
+					puppet = PREV
+					set_autonomy = { target = PREV autonomy_state = autonomy_puppet }
+				}
+				create_country_leader = {
+					name = "Nuri Killigil"
+					desc = "POLITICS_NURI_KILLIGIL_DESC"
+					picture = "gfx/leaders/TUR/Portrait_Turkey_Sefik_Husnu.dds"
+					expire = "1965.1.1"
+					ideology = nazism
+					traits = {
+					}
+				}
+			}
+			set_global_flag = TKS_exists
+	}
+	}
+	option = {
+		name = germany_UES.0.e #do not release turkestan
+		ai_will_do = {
+			factor = 0
+		}
+	}
+}
+
+country_event = {
+	id = germany_UES.1 #partition the East
+	title = germany_UES.1.t
+	desc = germany_UES.1.d
+	picture = GFX_report_event_asian_politicians
+
+	is_triggered_only = yes
+
+	option = {
+		name = germany_UES.1.a #annex the East to ourselves
+
+		ai_will_do = {
+  			factor = 100
+  		}
+		trigger = {
+			NOT = { 
+				country_exists = JAP
+				JAP = { is_in_faction_with = GER }
+			 }
+		}
+		JAP = {
+		add_opinion_modifier = {
+ 			target = GER
+  			modifier = refused_land
+			}
+		}
+			release = ESB
+			ESB = {
+				transfer_state = 568 
+				transfer_state = 567
+				transfer_state = 566
+				transfer_state = 578
+				transfer_state = 575
+				transfer_state = 564
+				transfer_state = 565
+				transfer_state = 563
+				transfer_state = 574
+				transfer_state = 2432
+				transfer_state = 561
+				transfer_state = 1893
+				transfer_state = 562
+				transfer_state = 1894
+				transfer_state = 637
+				transfer_state = 1892
+				transfer_state = 1891
+				transfer_state = 560
+				transfer_state = 1888
+				transfer_state = 1887
+				transfer_state = 1886
+				transfer_state = 657
+				transfer_state = 1875
+				transfer_state = 1890
+				transfer_state = 1889
+				transfer_state = 655
+				transfer_state = 1885
+				transfer_state = 1882
+				transfer_state = 1883
+				transfer_state = 1884
+				transfer_state = 409
+				transfer_state = 1876
+				transfer_state = 1878
+				transfer_state = 1877
+				transfer_state = 1879
+				transfer_state = 1880
+				transfer_state = 1881
+				transfer_state = 408
+
+				hidden_effect = {
+					every_owned_state = { add_state_core }
+				}
+
+				GER = {
+					puppet = PREV
+					set_autonomy = { target = PREV autonomy_state = autonomy_integrated_puppet }
+				}
+				set_cosmetic_tag = ESB_reichskommissariat
+				create_country_leader = {
+					name = "Franz Schwede"
+					desc = "POLITICS_FRANZ_SCHWEDE_DESC"
+					picture = "gfx/leaders/Europe/Portrait_Europe_Generic_6.dds"
+					expire = "1965.1.1"
+					ideology = nazism
+					traits = {
+					}
+			}
+			TAN = { limit = { controls_state = 329 }
+				ESB = { transfer_state = 329 }
+			}
+			
+			if = {
+				limit = {
+					country_exists = MON
+				}
+				hidden_effect = {
+					MON = {
+						set_state_controller = 1869
+						set_state_controller = 1870
+						set_state_controller = 1868
+						set_state_controller = 1867
+						set_state_controller = 1871
+						set_state_controller = 1872
+						set_state_controller = 1866
+						set_state_controller = 1864
+						set_state_controller = 1865
+						set_state_controller = 1873
+						set_state_controller = 330
+						set_state_controller = 1862
+						set_state_controller = 1863
+						set_state_controller = 1861
+						set_state_controller = 1860
+					}
+				}
+				MON = {
+					start_civil_war = { ideology = fascism size = 1 }
+				}
+				random_country = {
+					limit = {
+						original_tag = MON
+						has_government = fascism
+					}
+					transfer_state = 1869
+					transfer_state = 1870
+					transfer_state = 1868
+					transfer_state = 1867
+					transfer_state = 1871
+					transfer_state = 1872
+					transfer_state = 1866
+					transfer_state = 1864
+					transfer_state = 1865
+					transfer_state = 1873
+					transfer_state = 330
+					transfer_state = 1862
+					transfer_state = 1863
+					transfer_state = 1861
+					transfer_state = 1860
+					MON = {
+						puppet = PREV
+						set_autonomy = { target = PREV autonomy_state = autonomy_puppet }
+					}
+					set_cosmetic_tag = MON_reichskommissariat
+					hidden_effect = {
+						add_core_of = 1869 
+						add_core_of = 1870
+						add_core_of = 1868
+						add_core_of = 1867
+						add_core_of = 1871
+						add_core_of = 1872
+						add_core_of = 1866
+						add_core_of = 1864
+						add_core_of = 1865
+						add_core_of = 1873
+						add_core_of = 330
+						add_core_of = 1862
+						add_core_of = 1863
+						add_core_of = 1861
+						add_core_of = 1860
+					}
+				}
+			}
+			else = {
+				MON = {
+					transfer_state = 1869
+					transfer_state = 1870
+					transfer_state = 1868
+					transfer_state = 1867
+					transfer_state = 1871
+					transfer_state = 1872
+					transfer_state = 1866
+					transfer_state = 1864
+					transfer_state = 1865
+					transfer_state = 1873
+					transfer_state = 330
+					transfer_state = 1862
+					transfer_state = 1863
+					transfer_state = 1861
+					transfer_state = 1860
+
+					hidden_effect = {
+						add_core_of = 1869
+						add_core_of = 1870
+						add_core_of = 1868
+						add_core_of = 1871
+						add_core_of = 1872
+						add_core_of = 1866
+						add_core_of = 1865
+						add_core_of = 1864
+						add_core_of = 1865
+						add_core_of = 1873
+						add_core_of = 330
+						add_core_of = 1862
+						add_core_of = 1863
+						add_core_of = 1861
+						add_core_of = 1860
+					}
+
+					set_cosmetic_tag = MON_reichskommissariat
+				}
+				GER = { set_autonomy = { target = MON autonomy_state = autonomy_puppet } }
+			}
+
+
+	}
+
+	option = {
+		name = germany_UES.1.b #partition the east with Japan
+
+		ai_will_do = {
+   			factor = 4000
+   		}
+
+		trigger = {
+				country_exists = JAP
+				JAP = { is_in_faction_with = GER }
+		}
+		release = ESB
+			ESB = {
+				transfer_state = 568 
+				transfer_state = 567
+				transfer_state = 566
+				transfer_state = 578
+				transfer_state = 575
+				transfer_state = 564
+				transfer_state = 565
+				transfer_state = 563
+				transfer_state = 574
+				transfer_state = 2432
+				transfer_state = 561
+				transfer_state = 1893
+				transfer_state = 562
+				transfer_state = 1894
+				transfer_state = 637
+				}
+
+				hidden_effect = {
+					every_owned_state = { add_state_core }
+				}
+
+				JAP = {
+					puppet = PREV
+					set_autonomy = { target = PREV autonomy_state = autonomy_integrated_puppet }
+				}
+				set_cosmetic_tag = ESB_reichskommissariat
+				create_country_leader = {
+					name = "Grigory Mikhaylovich Semyonov"
+					desc = "POLITICS_Grigory_Mikhaylovich_Semyonov_DESC"
+					picture = "gfx/leaders/Europe/Portrait_Soviet_Konstantin_Rodzaevsky.dds"
+					expire = "1965.1.1"
+					ideology = fascism_ideology
+					traits = {
+					}
+				}
+				}
+			TAN = { limit = { controls_state = 329 }
+				ESB = { transfer_state = 329 }
+			}
+
+			if = {
+				limit = {
+					country_exists = MEN
+				}
+				MEN = {
+					limit = {
+						original_tag = MEN
+						has_government = fascism
+					}
+					transfer_state = 1869
+					transfer_state = 1870
+					transfer_state = 1868
+					transfer_state = 1867
+					transfer_state = 1871
+					transfer_state = 1872
+					transfer_state = 1866
+					transfer_state = 1864
+					transfer_state = 1865
+					transfer_state = 1873
+					transfer_state = 330
+					transfer_state = 1862
+					transfer_state = 1863
+					transfer_state = 1861
+					transfer_state = 1860
+
+					hidden_effect = {
+						add_core_of = 1869 
+						add_core_of = 1870
+						add_core_of = 1868
+						add_core_of = 1867
+						add_core_of = 1871
+						add_core_of = 1872
+						add_core_of = 1866
+						add_core_of = 1864
+						add_core_of = 1865
+						add_core_of = 1873
+						add_core_of = 330
+						add_core_of = 1862
+						add_core_of = 1863
+						add_core_of = 1861
+						add_core_of = 1860
+					}
+				}
+			}
+			else = {
+				release = MEN
+				MEN = {
+					transfer_state = 1869
+					transfer_state = 1870
+					transfer_state = 1868
+					transfer_state = 1867
+					transfer_state = 1871
+					transfer_state = 1872
+					transfer_state = 1866
+					transfer_state = 1864
+					transfer_state = 1865
+					transfer_state = 1873
+					transfer_state = 330
+					transfer_state = 1862
+					transfer_state = 1863
+					transfer_state = 1861
+					transfer_state = 1860
+
+					hidden_effect = {
+						add_core_of = 1869
+						add_core_of = 1870
+						add_core_of = 1868
+						add_core_of = 1871
+						add_core_of = 1872
+						add_core_of = 1866
+						add_core_of = 1865
+						add_core_of = 1864
+						add_core_of = 1865
+						add_core_of = 1873
+						add_core_of = 330
+						add_core_of = 1862
+						add_core_of = 1863
+						add_core_of = 1861
+						add_core_of = 1860
+					}
+					JAP = {
+						puppet = PREV
+						set_autonomy = { target = PREV autonomy_state = autonomy_puppet }
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					country_exists = MAN
+				}
+				MAN = {
+					limit = {
+						original_tag = MAN
+						has_government = fascism
+					}
+					transfer_state = 1892
+					transfer_state = 1891
+					transfer_state = 560
+					transfer_state = 1888
+					transfer_state = 1887
+					transfer_state = 1886
+					transfer_state = 657
+					transfer_state = 1875
+					transfer_state = 1890
+					transfer_state = 1889
+					transfer_state = 655
+					transfer_state = 1885
+					transfer_state = 1882
+					transfer_state = 1883
+					transfer_state = 1884
+					transfer_state = 409
+					transfer_state = 1876
+					transfer_state = 1878
+					transfer_state = 1877
+					transfer_state = 1879
+					transfer_state = 1880
+					transfer_state = 1881
+					transfer_state = 408
+
+					hidden_effect = {
+						add_core_of = 1892
+						add_core_of = 1891
+						add_core_of = 560
+						add_core_of = 1888
+						add_core_of = 1887
+						add_core_of = 1886
+						add_core_of = 657
+						add_core_of = 1875
+						add_core_of = 1890
+						add_core_of = 1889
+						add_core_of = 655
+						add_core_of = 1885
+						add_core_of = 1882
+						add_core_of = 1883
+						add_core_of = 1884
+						add_core_of = 409
+						add_core_of = 1876
+						add_core_of = 1878
+						add_core_of = 1877
+						add_core_of = 1879
+						add_core_of = 1880
+						add_core_of = 1881
+						add_core_of = 408
+					}
+				}
+			}
+			else = {
+				release = MAN
+				MAN = {
+					transfer_state = 1892
+					transfer_state = 1891
+					transfer_state = 560
+					transfer_state = 1888
+					transfer_state = 1887
+					transfer_state = 1886
+					transfer_state = 657
+					transfer_state = 1875
+					transfer_state = 1890
+					transfer_state = 1889
+					transfer_state = 655
+					transfer_state = 1885
+					transfer_state = 1882
+					transfer_state = 1883
+					transfer_state = 1884
+					transfer_state = 409
+					transfer_state = 1876
+					transfer_state = 1878
+					transfer_state = 1877
+					transfer_state = 1879
+					transfer_state = 1880
+					transfer_state = 1881
+					transfer_state = 408
+
+					hidden_effect = {
+						add_core_of = 1892
+						add_core_of = 1891
+						add_core_of = 560
+						add_core_of = 1888
+						add_core_of = 1887
+						add_core_of = 1886
+						add_core_of = 657
+						add_core_of = 1875
+						add_core_of = 1890
+						add_core_of = 1889
+						add_core_of = 655
+						add_core_of = 1885
+						add_core_of = 1882
+						add_core_of = 1883
+						add_core_of = 1884
+						add_core_of = 409
+						add_core_of = 1876
+						add_core_of = 1878
+						add_core_of = 1877
+						add_core_of = 1879
+						add_core_of = 1880
+						add_core_of = 1881
+						add_core_of = 408
+					}
+				}
+			}
+}
+
+	option = { #nothing
+		name = germany_UES.1.c
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+country_event = {
+	id = germany_UES.2 #caucasian partition/RK
+	title = germany_UES.2.t
+	desc = germany_UES.2.d
+	picture = GFX_report_event_generic_conference
+
+	is_triggered_only = yes
+
+	option= {
+		name = germany_UES.2.a #RK kaukasus
+		ai_will_do = 500
+		release = CAU
+			CAU = {
+				transfer_state = 1102
+				transfer_state = 229
+				transfer_state = 1104
+				transfer_state = 1103
+				transfer_state = 1105
+				transfer_state = 797
+				transfer_state = 230
+				transfer_state = 1107
+				transfer_state = 231
+				transfer_state = 2379
+				transfer_state = 1108
+				transfer_state = 1109
+				transfer_state = 1106
+				transfer_state = 1115
+				transfer_state = 232
+				transfer_state = 806
+				transfer_state = 1117
+				transfer_state = 1116
+				transfer_state = 1118
+				transfer_state = 2380
+				transfer_state = 1113
+				transfer_state = 1119
+				transfer_state = 1114
+				transfer_state = 233
+				transfer_state = 1111
+				transfer_state = 1110
+				transfer_state = 234
+				transfer_state = 1112
+				transfer_state = 1121
+				transfer_state = 238
+				transfer_state = 217
+				transfer_state = 237
+				transfer_state = 1124
+				transfer_state = 235
+				transfer_state = 1122
+				transfer_state = 236
+				transfer_state = 1123
+
+				hidden_effect = {
+				add_core_of = 1102
+				add_core_of = 229
+				add_core_of = 1104
+				add_core_of = 1103
+				add_core_of = 1105
+				add_core_of = 797
+				add_core_of = 230
+				add_core_of = 1107
+				add_core_of = 231
+				add_core_of = 2379
+				add_core_of = 1108
+				add_core_of = 1109
+				add_core_of = 1106
+				add_core_of = 1115
+				add_core_of = 232
+				add_core_of = 806
+				add_core_of = 1117
+				add_core_of = 1116
+				add_core_of = 1118
+				add_core_of = 2380
+				add_core_of = 1113
+				add_core_of = 1119
+				add_core_of = 1114
+				add_core_of = 233
+				add_core_of = 1111
+				add_core_of = 1110
+				add_core_of = 234
+				add_core_of = 1112
+				add_core_of = 1121
+				add_core_of = 238
+				add_core_of = 217
+				add_core_of = 237
+				add_core_of = 1124
+				add_core_of = 235
+				add_core_of = 1122
+				add_core_of = 236
+				add_core_of = 1123
+				}
+				GER = {
+					puppet = PREV
+					set_autonomy = { target = PREV autonomy_state = autonomy_integrated_puppet }
+				}
+				create_country_leader = {
+					name = "Arno Schickedanz"
+					desc = "POLITICS_ARNO_SCHICKEDANZ_DESC"
+					picture = "gfx/leaders/Europe/Portrait_Europe_Generic_5.dds"
+					expire = "1965.1.1"
+					ideology = nazism
+					traits = {
+					}
+				}
+			}
+	}
+	option= {
+		name = germany_UES.2.b #RK Kaukasus-confederation
+			ai_will_do = 100
+			release = CAU
+			CAU = {
+				transfer_state = 217
+				transfer_state = 238
+				transfer_state = 1121
+				transfer_state = 1122
+				transfer_state = 234
+				transfer_state = 1111
+				transfer_state = 1110
+				transfer_state = 233
+				transfer_state = 1123
+				transfer_state = 236
+				transfer_state = 1120
+
+				hidden_effect = {
+					add_core_of = 217
+					add_core_of = 238
+					add_core_of = 1121
+					add_core_of = 1122
+					add_core_of = 234
+					add_core_of = 1111
+					add_core_of = 1110
+					add_core_of = 233
+					add_core_of = 1123
+					add_core_of = 236
+					add_core_of = 1120
+
+				}
+				GER = {
+					puppet = PREV
+					set_autonomy = { target = PREV autonomy_state = autonomy_integrated_puppet }
+				}
+				create_country_leader = {
+					name = "Arno Schickedanz"
+					desc = "POLITICS_ARNO_SCHICKEDANZ_DESC"
+					picture = "gfx/leaders/Europe/Portrait_Europe_Generic_5.dds"
+					expire = "1965.1.1"
+					ideology = nazism
+					traits = {
+					}
+				}
+			}
+
+			release = KLM
+			KLM = {
+				transfer_state = 237
+				transfer_state = 1124
+
+			hidden_effect = {
+				add_core_of = 1124
+				add_core_of = 237
+			}
+			GER = {
+				puppet = PREV
+				set_autonomy = { target = PREV autonomy_state = autonomy_puppet }
+			}
+		}
+
+		release = VCS
+		VCS = {
+				transfer_state = 235
+				transfer_state = 1122
+				transfer_state = 1118
+				transfer_state = 1119
+
+			hidden_effect = {
+				add_core_of = 235
+				add_core_of = 1122
+				add_core_of = 1118
+				add_core_of = 1119
+			}
+			GER = {
+				puppet = PREV
+				set_autonomy = { target = PREV autonomy_state = autonomy_puppet }
+			}
+		}
+		release = ABK
+		ABK = {
+			transfer_state = 1106
+
+			hidden_effect = {
+				add_core_of = 1106
+			}
+			GER = {
+				puppet = PREV
+				set_autonomy = { target = PREV autonomy_state = autonomy_puppet }
+			}
+		}
+		release = KAC
+		KAC = {
+			transfer_state = 1114
+
+			hidden_effect = {
+				add_core_of = 1114
+			}
+			GER = {
+				puppet = PREV
+				set_autonomy = { target = PREV autonomy_state = autonomy_puppet }
+			}
+		}
+		release = KAB
+		KAB = {
+			transfer_state = 1113
+
+			hidden_effect = {
+				add_core_of = 1113
+			}
+			GER = {
+				puppet = PREV
+				set_autonomy = { target = PREV autonomy_state = autonomy_puppet }
+			}
+		}
+		release = OSS
+		OSS = {
+			transfer_state = 2380
+			transfer_state = 2379
+
+			hidden_effect = {
+				add_core_of = 2380
+				add_core_of = 2379
+			}
+			GER = {
+				puppet = PREV
+				set_autonomy = { target = PREV autonomy_state = autonomy_puppet }
+			}
+		}
+		release = GEO
+		GEO = {
+			transfer_state = 1107
+			transfer_state = 1108
+			transfer_state = 231
+			transfer_state = 1109
+
+			hidden_effect = {
+				add_core_of = 1107
+				add_core_of = 1108
+				add_core_of = 231
+				add_core_of = 1109
+			}
+			GER = {
+				puppet = PREV
+				set_autonomy = { target = PREV autonomy_state = autonomy_puppet }
+			}
+		}
+		release = ARM
+		ARM = {
+			transfer_state = 1105
+			transfer_state = 230
+
+			hidden_effect = {
+				add_core_of = 230
+				add_core_of = 1105
+			}
+			GER = {
+				puppet = PREV
+				set_autonomy = { target = PREV autonomy_state = autonomy_puppet }
+			}
+		}
+		release = AZR
+		AZR = {
+			transfer_state = 797
+			transfer_state = 229
+			transfer_state = 1102
+			transfer_state = 1104
+			transfer_state = 1103
+
+			hidden_effect = {
+				add_core_of = 797
+				add_core_of = 229
+				add_core_of = 1102
+				add_core_of = 1104
+				add_core_of = 1103
+			}
+			GER = {
+				puppet = PREV
+				set_autonomy = { target = PREV autonomy_state = autonomy_puppet }
+			}
+		}
+		release = NOG
+		NOG = {
+			transfer_state = 1116
+
+			hidden_effect = {
+				add_core_of = 1116
+			}
+			GER = {
+				puppet = PREV
+				set_autonomy = { target = PREV autonomy_state = autonomy_puppet }
+			}
+		}
+		release = CHE
+		CHE = {
+			transfer_state = 1117
+			transfer_state = 806
+
+			hidden_effect = {
+				add_core_of = 806
+				add_core_of = 1117
+			}
+			GER = {
+				puppet = PREV
+				set_autonomy = { target = PREV autonomy_state = autonomy_puppet }
+			}
+		}
+		release = DAG
+		DAG = {
+			transfer_state = 232
+			transfer_state = 1115
+
+			hidden_effect = {
+				add_core_of = 232
+				add_core_of = 1115
+			}
+			GER = {
+				puppet = PREV
+				set_autonomy = { target = PREV autonomy_state = autonomy_puppet }
+			}
+		}
+	}
+}
+	option= {
+		name = germany_UES.2.c #partiion with turks
+
+			trigger = {
+				TUR = {
+					is_in_faction_with = GER
+				}
+			}
+
+		TUR = {
+				add_opinion_modifier = {
+					target = GER
+					modifier = given_land 
+				}
+			transfer_state = 230
+			transfer_state = 1109
+			transfer_state = 1108
+			transfer_state = 1106
+			transfer_state = 231
+			transfer_state = 2379
+			transfer_state = 1107
+		}
+
+		release = CAU
+			CAU = {
+				transfer_state = 217
+				transfer_state = 238
+				transfer_state = 1121
+				transfer_state = 1122
+				transfer_state = 234
+				transfer_state = 1111
+				transfer_state = 1110
+				transfer_state = 233
+				transfer_state = 1123
+				transfer_state = 236
+				transfer_state = 1120
+
+				hidden_effect = {
+					add_core_of = 217
+					add_core_of = 238
+					add_core_of = 1121
+					add_core_of = 1122
+					add_core_of = 234
+					add_core_of = 1111
+					add_core_of = 1110
+					add_core_of = 233
+					add_core_of = 1123
+					add_core_of = 236
+					add_core_of = 1120
+
+				}
+				GER = {
+					puppet = PREV
+					set_autonomy = { target = PREV autonomy_state = autonomy_integrated_puppet }
+				}
+				create_country_leader = {
+					name = "Arno Schickedanz"
+					desc = "POLITICS_ARNO_SCHICKEDANZ_DESC"
+					picture = "gfx/leaders/Europe/Portrait_Europe_Generic_5.dds"
+					expire = "1965.1.1"
+					ideology = nazism
+					traits = {
+					}
+				}
+			}
+
+		release = KLM
+		KLM = {
+				transfer_state = 237
+				transfer_state = 1124
+
+			hidden_effect = {
+				add_core_of = 1124
+				add_core_of = 237
+			}
+			GER = {
+				puppet = PREV
+				set_autonomy = { target = PREV autonomy_state = autonomy_puppet }
+			}
+		}
+
+		release = VCS
+		VCS = {
+				transfer_state = 235
+				transfer_state = 1122
+				transfer_state = 1118
+				transfer_state = 1119
+
+			hidden_effect = {
+				add_core_of = 235
+				add_core_of = 1122
+				add_core_of = 1118
+				add_core_of = 1119
+			}
+			GER = {
+				puppet = PREV
+				set_autonomy = { target = PREV autonomy_state = autonomy_puppet }
+			}
+		}
+		release = KAC
+		KAC = {
+			transfer_state = 1114
+
+			hidden_effect = {
+				add_core_of = 1114
+			}
+			GER = {
+				puppet = PREV
+				set_autonomy = { target = PREV autonomy_state = autonomy_puppet }
+			}
+		}
+		release = KAB
+		KAB = {
+			transfer_state = 1113
+
+			hidden_effect = {
+				add_core_of = 1113
+			}
+			GER = {
+				puppet = PREV
+				set_autonomy = { target = PREV autonomy_state = autonomy_puppet }
+			}
+		}
+		release = OSS
+		OSS = {
+			transfer_state = 2380
+
+			hidden_effect = {
+				add_core_of = 2380
+			}
+			GER = {
+				puppet = PREV
+				set_autonomy = { target = PREV autonomy_state = autonomy_puppet }
+			}
+		}
+		release = ARM
+		ARM = {
+			transfer_state = 1105
+
+			hidden_effect = {
+				add_core_of = 1105
+			}
+			GER = {
+				puppet = PREV
+				set_autonomy = { target = PREV autonomy_state = autonomy_puppet }
+			}
+		}
+		release = AZR
+		AZR = {
+			transfer_state = 797
+			transfer_state = 229
+			transfer_state = 1102
+			transfer_state = 1104
+			transfer_state = 1103
+
+			hidden_effect = {
+				add_core_of = 797
+				add_core_of = 229
+				add_core_of = 1102
+				add_core_of = 1104
+				add_core_of = 1103
+			}
+			GER = {
+				puppet = PREV
+				set_autonomy = { target = PREV autonomy_state = autonomy_puppet }
+			}
+		}
+		release = NOG
+		NOG = {
+			transfer_state = 1116
+
+			hidden_effect = {
+				add_core_of = 1116
+			}
+			GER = {
+				puppet = PREV
+				set_autonomy = { target = PREV autonomy_state = autonomy_puppet }
+			}
+		}
+		release = CHE
+		CHE = {
+			transfer_state = 1117
+			transfer_state = 806
+
+			hidden_effect = {
+				add_core_of = 806
+				add_core_of = 1117
+			}
+			GER = {
+				puppet = PREV
+				set_autonomy = { target = PREV autonomy_state = autonomy_puppet }
+			}
+		}
+		release = DAG
+		DAG = {
+			transfer_state = 232
+			transfer_state = 1115
+
+			hidden_effect = {
+				add_core_of = 232
+				add_core_of = 1115
+			}
+			GER = {
+				puppet = PREV
+				set_autonomy = { target = PREV autonomy_state = autonomy_puppet }
+			}
+		}
+	}
+	}
+	option= {
+		name = germany_UES.2.e #nothing
+	}
+
+}
+

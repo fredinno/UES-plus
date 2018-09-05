@@ -1,4 +1,4 @@
-VAT_INF_01 = 
+﻿VAT_INF_01 = 
 {
 	name = "Guardia Svizzera Pontificia"
 

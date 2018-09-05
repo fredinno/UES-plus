@@ -4862,10 +4862,6 @@ CHI_communist_infiltration = {
 
 		}	
 
-		remove = {
-
-		}
-
 		days_remove = 0
 		days_re_enable = 30
 
@@ -4952,9 +4948,6 @@ CHI_communist_infiltration = {
 			}
 		}
 
-		remove = {
-
-		}
 		
 		modifier = {
 			command_power_gain = -0.05
@@ -5017,9 +5010,7 @@ CHI_communist_infiltration = {
 			}
 		}
 
-		remove = {
 
-		}
 		
 		modifier = {
 			command_power_gain = -0.05
@@ -5082,9 +5073,7 @@ CHI_communist_infiltration = {
 			}
 		}
 
-		remove = {
 
-		}
 		
 		modifier = {
 			command_power_gain = -0.05
@@ -5146,9 +5135,7 @@ CHI_communist_infiltration = {
 			state = 607
 		}
 
-		remove = {
 
-		}
 		
 		modifier = {
 			command_power_gain = -0.05
@@ -5210,9 +5197,7 @@ CHI_communist_infiltration = {
 			}
 		}
 
-		remove = {
 
-		}
 		
 		modifier = {
 			command_power_gain = -0.05
@@ -5274,9 +5259,6 @@ CHI_communist_infiltration = {
 			}
 		}
 
-		remove = {
-
-		}
 		
 		modifier = {
 			command_power_gain = -0.05
@@ -5338,9 +5320,7 @@ CHI_communist_infiltration = {
 			}
 		}
 
-		remove = {
 
-		}
 		
 		modifier = {
 			command_power_gain = -0.05
@@ -5402,9 +5382,7 @@ CHI_communist_infiltration = {
 			}
 		}
 
-		remove = {
 
-		}
 		
 		modifier = {
 			command_power_gain = -0.05
@@ -5466,9 +5444,7 @@ CHI_communist_infiltration = {
 			}
 		}
 
-		remove = {
 
-		}
 		
 		modifier = {
 			command_power_gain = -0.05
@@ -5530,9 +5506,7 @@ CHI_communist_infiltration = {
 			}
 		}
 
-		remove = {
 
-		}
 		
 		modifier = {
 			command_power_gain = -0.05

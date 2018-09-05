@@ -1,4 +1,4 @@
-ADR_INF_01 = 
+﻿ADR_INF_01 = 
 {
 	name = "Grup d'Intervenció Policia d'Andorra"
 

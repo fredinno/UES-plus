@@ -627,6 +627,7 @@ country_event = {
 				owns_state = 63
 				owns_state = 66
 				owns_state = 67
+				owns_state = 85
 				owns_state = 744
 				owns_state = 743
 				owns_state = 1018
@@ -669,6 +670,10 @@ country_event = {
 		if = {
 			limit = { SOV = { owns_state = 67 } }
 			transfer_state = 67
+		}
+		if = {
+			limit = { SOV = { owns_state = 85 } }
+			transfer_state = 85
 		}
 		if = {
 			limit = { SOV = { owns_state = 743 } }
@@ -764,6 +769,15 @@ country_event = {
 					}
 				}
 				POL = { transfer_state = 67 }
+			}
+			if = {
+				limit = {
+					OR = {
+						SOV = { owns_state = 85 }
+						POL = { owns_state = 85 }
+					}
+				}
+				POL = { transfer_state = 85 }
 			}
 			if = {
 				limit = {

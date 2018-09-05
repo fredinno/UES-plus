@@ -218,10 +218,9 @@ SYM = "countries/southyemen.txt"
 SML = "countries/somaliland.txt"
 NNG = "countries/northnewguinea.txt"
 WNG = "countries/westguinea.txt"
-TKS = "countries/turkestan.txt"
 WIF = "countries/wif.txt"
-UCA = "countries/upca.txt"
 SNG = "countries/south papua.txt"
+MEZ = "countries/mezzogiorno.txt"
 
 #rotf
 BRI = "countries/brittany.txt"
@@ -229,6 +228,7 @@ URA = "countries/ural.txt"
 LIV = "countries/livonia.txt"
 BAT = "countries/banat.txt"
 CRE = "countries/crete.txt"
+VCS = "countries/volga-cossack state.txt"
 
 #reordered UES
 DAG = "countries/dagestan.txt"
@@ -344,7 +344,6 @@ MRU = "countries/maritime union.txt"
 TRN = "countries/transnistra.txt"
 EAC = "countries/east african federation.txt"
 CAF = "countries/central african federation.txt"
-TCF = "countries/transcaucasia.txt"
 
 #ues+ V2 (reordered)
 KOU = "countries/courland.txt"
@@ -361,6 +360,9 @@ SKK = "countries/sikkim.txt"
 SEQ = "countries/sequoyah.txt"
 KTG = "countries/katanga.txt"
 YUC = "countries/yucatan.txt"
+NCP = "countries/northcyprus.txt"
+CAH = "countries/channelislands.txt"
+GOA = "countries/goa.txt"
 
 #rotf(post-zealandia)
 ESB = "countries/eastsiberia.txt"

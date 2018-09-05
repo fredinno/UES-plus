@@ -17,9 +17,7 @@ JAP_intervene_in_china = {
 			}
 		}
 
-		remove = {
-			
-		}
+
 
 		fire_only_once = no
 
@@ -64,9 +62,7 @@ JAP_intervene_in_china = {
 			}
 		}
 
-		remove = {
-			
-		}
+
 
 		fire_only_once = yes
 
@@ -112,9 +108,6 @@ JAP_intervene_in_china = {
 			}
 		}
 
-		remove = {
-			
-		}
 
 		activation = {
 			has_country_flag = JAP_conquer_china_activate
@@ -135,9 +128,7 @@ JAP_intervene_in_china = {
 			add_stability = 0.03
 			add_war_support = 0.07
 		}
-	}
-
-	
+	}	
 }
 
 JAP_interservice_rivalry = {
@@ -740,9 +731,6 @@ foreign_politics = {
 			surrender_limit = -1.0
 		}
 
-		remove_effect = {
-
-		}
 
 		remove = {
 			has_war = no
@@ -838,9 +826,7 @@ JAP_southern_expansion = {
 			has_completed_focus = JAP_strike_south_doctrine
 		}
 
-		remove = {
-			
-		}
+
 
 		fire_only_once = yes
 
@@ -922,9 +908,7 @@ JAP_pacific_guardian = {
 			}
 		}
 
-		remove = {
-			
-		}
+
 
 		fire_only_once = yes
 
@@ -960,9 +944,7 @@ JAP_pacific_guardian = {
 			}
 		}
 
-		remove = {
-			
-		}
+
 
 		fire_only_once = yes
 
@@ -1001,9 +983,6 @@ JAP_pacific_guardian = {
 			}
 		}
 
-		remove = {
-			
-		}
 
 		fire_only_once = yes
 
@@ -1162,9 +1141,7 @@ JAP_colonial_independence = {
 			has_completed_focus = JAP_liberate_manchuria
 		}
 
-		remove = {
-			
-		}
+
 
 		fire_only_once = yes
 
@@ -1188,8 +1165,62 @@ JAP_colonial_independence = {
 					country_exists = event_target:WTT_current_china_leader
 				}
 				event_target:WTT_current_china_leader = { 
-					transfer_state = { 609 1748 1792 611 612 1791 1758 610 1776 1759 1757 1760 1750 1775 715 1761 1778 1749 716 1764 1763 1768 1762 1764 1769 1770 1766 1767 1765 1751 1773 1772 1752 1771 1781 1780 1779 1784 1785 717 1786 1782 328 1774 1767 1777 1787 1753 1783 1786 1789 1788 714 1756 1755 1754 1790 }
-
+					transfer_state = 609
+					transfer_state = 1748
+					transfer_state = 1792
+					transfer_state = 611
+					transfer_state = 612
+					transfer_state = 1791
+					transfer_state = 1758
+					transfer_state = 610
+					transfer_state = 1776
+					transfer_state = 1759
+					transfer_state = 1757
+					transfer_state = 1760
+					transfer_state = 1750
+					transfer_state = 1775
+					transfer_state = 715 
+					transfer_state = 1761
+					transfer_state = 1778
+					transfer_state = 1749
+					transfer_state = 716
+					transfer_state = 1764
+					transfer_state = 1763
+					transfer_state = 1768
+					transfer_state = 1762
+					transfer_state = 1764
+					transfer_state = 1769
+					transfer_state = 1770
+					transfer_state = 1766
+					transfer_state = 1767
+					transfer_state = 1765
+					transfer_state = 1751
+					transfer_state = 1773
+					transfer_state = 1772
+					transfer_state = 1752
+					transfer_state = 1771
+					transfer_state = 1781
+					transfer_state = 1780
+					transfer_state = 1779
+					transfer_state = 1785
+					transfer_state = 717
+					transfer_state = 1786
+					transfer_state = 1782
+					transfer_state = 328
+					transfer_state = 1774
+					transfer_state = 1767 
+					transfer_state = 1777 
+					transfer_state = 1787 
+					transfer_state = 1753 
+					transfer_state = 1783 
+					transfer_state = 1786 
+					transfer_state = 1789 
+					transfer_state = 1788 
+					transfer_state = 714 
+					transfer_state = 1756 
+					transfer_state = 1755 
+					transfer_state = 1754
+					transfer_state = 1790 
 					country_event = { id = wtt_japan.101 days = 1 }
 					custom_effect_tooltip = JAP_liberate_manchuria_alliance_tt
 				}
@@ -1200,8 +1231,62 @@ JAP_colonial_independence = {
 					NOT = { country_exists = event_target:WTT_current_china_leader }
 				}
 				event_target:WTT_communist_china = { 
-					transfer_state = { 609 1748 1792 611 612 1791 1758 610 1776 1759 1757 1760 1750 1775 715 1761 1778 1749 716 1764 1763 1768 1762 1764 1769 1770 1766 1767 1765 1751 1773 1772 1752 1771 1781 1780 1779 1784 1785 717 1786 1782 328 1774 1767 1777 1787 1753 1783 1786 1789 1788 714 1756 1755 1754 1790 }
-
+					transfer_state = 609
+					transfer_state = 1748
+					transfer_state = 1792
+					transfer_state = 611
+					transfer_state = 612
+					transfer_state = 1791
+					transfer_state = 1758
+					transfer_state = 610
+					transfer_state = 1776
+					transfer_state = 1759
+					transfer_state = 1757
+					transfer_state = 1760
+					transfer_state = 1750
+					transfer_state = 1775
+					transfer_state = 715 
+					transfer_state = 1761
+					transfer_state = 1778
+					transfer_state = 1749
+					transfer_state = 716
+					transfer_state = 1764
+					transfer_state = 1763
+					transfer_state = 1768
+					transfer_state = 1762
+					transfer_state = 1764
+					transfer_state = 1769
+					transfer_state = 1770
+					transfer_state = 1766
+					transfer_state = 1767
+					transfer_state = 1765
+					transfer_state = 1751
+					transfer_state = 1773
+					transfer_state = 1772
+					transfer_state = 1752
+					transfer_state = 1771
+					transfer_state = 1781
+					transfer_state = 1780
+					transfer_state = 1779
+					transfer_state = 1785
+					transfer_state = 717
+					transfer_state = 1786
+					transfer_state = 1782
+					transfer_state = 328
+					transfer_state = 1774
+					transfer_state = 1767 
+					transfer_state = 1777 
+					transfer_state = 1787 
+					transfer_state = 1753 
+					transfer_state = 1783 
+					transfer_state = 1786 
+					transfer_state = 1789 
+					transfer_state = 1788 
+					transfer_state = 714 
+					transfer_state = 1756 
+					transfer_state = 1755 
+					transfer_state = 1754
+					transfer_state = 1790 
 					country_event = { id = wtt_japan.101 days = 1 }
 				}
 			}
@@ -1225,8 +1310,62 @@ JAP_colonial_independence = {
 							has_government = fascism
 						}
 					}
-					transfer_state = { 609 1748 1792 611 612 1791 1758 610 1776 1759 1757 1760 1750 1775 715 1761 1778 1749 716 1764 1763 1768 1762 1764 1769 1770 1766 1767 1765 1751 1773 1772 1752 1771 1781 1780 1779 1784 1785 717 1786 1782 328 1774 1767 1777 1787 1753 1783 1786 1789 1788 714 1756 1755 1754 1790 }
-
+					transfer_state = 609
+					transfer_state = 1748
+					transfer_state = 1792
+					transfer_state = 611
+					transfer_state = 612
+					transfer_state = 1791
+					transfer_state = 1758
+					transfer_state = 610
+					transfer_state = 1776
+					transfer_state = 1759
+					transfer_state = 1757
+					transfer_state = 1760
+					transfer_state = 1750
+					transfer_state = 1775
+					transfer_state = 715 
+					transfer_state = 1761
+					transfer_state = 1778
+					transfer_state = 1749
+					transfer_state = 716
+					transfer_state = 1764
+					transfer_state = 1763
+					transfer_state = 1768
+					transfer_state = 1762
+					transfer_state = 1764
+					transfer_state = 1769
+					transfer_state = 1770
+					transfer_state = 1766
+					transfer_state = 1767
+					transfer_state = 1765
+					transfer_state = 1751
+					transfer_state = 1773
+					transfer_state = 1772
+					transfer_state = 1752
+					transfer_state = 1771
+					transfer_state = 1781
+					transfer_state = 1780
+					transfer_state = 1779
+					transfer_state = 1785
+					transfer_state = 717
+					transfer_state = 1786
+					transfer_state = 1782
+					transfer_state = 328
+					transfer_state = 1774
+					transfer_state = 1767 
+					transfer_state = 1777 
+					transfer_state = 1787 
+					transfer_state = 1753 
+					transfer_state = 1783 
+					transfer_state = 1786 
+					transfer_state = 1789 
+					transfer_state = 1788 
+					transfer_state = 714 
+					transfer_state = 1756 
+					transfer_state = 1755 
+					transfer_state = 1754
+					transfer_state = 1790 
 					country_event = { id = wtt_japan.101 days = 1 }
 					custom_effect_tooltip = JAP_liberate_manchuria_alliance_tt
 				}
@@ -1253,9 +1392,7 @@ political_actions = {
 			has_completed_focus = JAP_join_the_london_naval_treaty
 		}
 
-		remove = {
-			
-		}
+
 
 		fire_only_once = yes
 
@@ -1860,9 +1997,7 @@ operations = {
 			has_completed_focus = JAP_preemptive_war
 		}
 
-		remove = {
-			
-		}
+
 
 		fire_only_once = yes
 

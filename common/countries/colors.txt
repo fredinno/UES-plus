@@ -959,21 +959,17 @@ WNG = {
  color = rgb { 255 128 0 }
  color_ui = rgb { 255 128 0 }
 }
-TKS = {
- color = rgb { 211 183 84 }
- color_ui = rgb { 211 183 84 }
-}
 WIF = {
  color = rgb { 255 100 177 }
  color_ui = rgb { 255 100 177 }
 }
-UCA = {
- color = rgb { 117 199 238 }
- color_ui = rgb { 117 199 238 }
-}
 SNG = {
 	color = rgb { 135  126  159 }
 	color_ui = rgb { 135  126  159 }
+}
+MEZ = {
+	color = rgb { 140 174 4 }
+	color_ui = rgb { 140 174 4 }
 }
 
 #rotf
@@ -1446,10 +1442,6 @@ CAF = {
 	color = rgb { 128 64 0 }
 	color_ui = rgb { 128 64 0 }
 }
-TCF = {
-	color = rgb { 128 0 255 }
-	color_ui = rgb { 128 0 255 }
-}
 
 KOU = {
 	color = rgb { 66 73 125 }
@@ -1538,4 +1530,16 @@ SKK = {
 YUC = {
 	color = rgb { 92 167 139 }
 	color_ui = rgb { 92 167 139 }
+}
+NCP = {
+	color = rgb { 183 21 26 }
+	color_ui = rgb { 183 21 26 }
+}
+CAH = {
+	color = rgb { 181 202 204 }
+	color_ui = rgb { 181 202 204 }
+}
+GOA = {
+	color = rgb { 41 118 22 }
+	color_ui = rgb { 41 118 22 }
 }

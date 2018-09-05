@@ -1,0 +1,222 @@
+ideas = {
+
+	political_advisor = {
+
+		SCH_luo_zezhou = {
+
+			picture = generic_political_advisor_asia_1
+			
+			allowed = {
+				original_tag = SCH
+			}
+			
+			traits = { captain_of_industry }
+		}
+
+		SCH_liu_xiang = {
+
+			picture = generic_political_advisor_asia_1
+				
+			allowed = {
+				original_tag = SCH
+			}
+			
+			traits = { backroom_backstabber }
+			ai_will_do = {
+				factor = 0
+			}
+		}
+
+		SCH_liu_wenhui = {
+
+			picture = generic_political_advisor_asia_3
+			
+			allowed = {
+				original_tag = SCH
+			}
+			
+			traits = { financial_expert }
+		}
+	}
+
+	theorist = {
+		SCH_keng_wu = {
+
+			picture = generic_army_asia_4
+			
+			allowed = {
+				original_tag = SCH
+			}
+			
+			research_bonus = {
+				land_doctrine = 0.07
+			}
+			
+			traits = { grand_battle_plan_expert }
+		}
+		
+		SCH_chen_shiou = { 
+
+			picture = generic_air_asia_6
+			
+			allowed = {
+				original_tag = SCH
+			}
+			
+			research_bonus = {
+				air_doctrine = 0.07
+			}
+			
+			traits = { mass_assault_expert }
+		}
+	}
+
+	high_command = {
+
+		SCH_tian_songyao = {
+
+			picture = generic_army_asia_2
+			
+			allowed = {
+				original_tag = SCH
+			}
+			
+			traits = { army_cavalry_1 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		SCH_deng_xihou = {
+
+			picture = generic_army_asia_5
+			
+			allowed = {
+				original_tag = SCH
+			}
+			
+			traits = { army_infantry_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		SCH_liu_cunhou = {
+
+			picture = generic_army_asia_6
+			
+			allowed = {
+				original_tag = SCH
+			}
+			
+			traits = { army_commando_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		SCH_cheng_qian = {
+
+			picture = generic_army_asia_3
+			
+			allowed = {
+				original_tag = SCH
+			}
+			
+			traits = { army_regrouping_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	army_chief = {
+		
+		SCH_yang_sen = {
+
+			picture = generic_army_asia_2
+			
+			allowed = {
+				original_tag = SCH
+			}
+			
+			traits = { army_chief_offensive_3 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		SCH_yin_changheng = {
+
+			picture = generic_army_asia_1
+			
+			allowed = {
+				original_tag = SCH
+			}
+			
+			traits = { army_chief_old_guard }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	air_chief = {
+		
+		SCH_li_chongxi = {
+			
+			picture = generic_air_asia_1
+			
+			allowed = {
+				original_tag = SCH
+			}
+			
+
+			
+			traits = { air_chief_night_operations_1 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	
+	navy_chief = {
+
+		SCH_li_jiayu = {
+			
+			picture = generic_navy_asia_1
+
+			allowed = {
+				original_tag = SCH
+			}
+					
+			traits = { navy_chief_reform_1 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		SCH_chen_fubin = {
+			
+			picture = generic_navy_asia_3
+
+			allowed = {
+				original_tag = SCH
+			}
+					
+			traits = { navy_chief_decisive_battle_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+}

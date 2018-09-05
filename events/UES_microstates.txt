@@ -1,0 +1,292 @@
+country_event = { #papal states formation
+	id = microstates_UES.0
+	title = microstates_UES.0.t
+	desc = microstates_UES.0.d
+	picture = GFX_report_event_german_troops
+
+	trigger = {
+		VAT = {
+			owns_state = 2
+			owns_state = 2368
+		}
+		tag = VAT
+	}
+
+	option = {
+		name = microstates_UES.0.a
+		add_state_core = 2
+		add_state_core = 1260
+		add_state_core = 161
+		add_state_core = 1258
+		add_political_power = -200
+		stability_factor = -0.50
+	}
+}
+
+news_event = { #papal states formation-news
+	id = microstates_UES.1
+	title = microstates_UES.1.t
+	desc = microstates_UES.1.d
+	picture = GFX_news_event_generic_parliament
+	major = yes
+	fire_only_once = yes
+
+	trigger = {
+		VAT = {
+			owns_state = 2
+			owns_state = 2368
+		}
+	}
+
+	option = {
+		name = microstates_UES.1.a
+	}
+}
+
+country_event = { #papal states annexation
+	id = microstates_UES.2
+	title = microstates_UES.2.t
+	desc = microstates_UES.2.d
+	picture = GFX_report_event_romanian_soldiers
+
+	trigger = {
+		any_country = { owns_state = 2368 }
+	}
+
+	option = {
+		name = microstates_UES.2.a #annex the vatican!- angers all catholic nations
+		ai_will_do = {
+				factor = 0
+
+				modifier = {
+					has_government = communism
+					factor = 400
+				}
+			}
+		ROOT = {
+			add_opinion_modifier = { target = YUC modifier = catholics_angered_100_percent }
+			add_opinion_modifier = { target = WAF modifier = catholics_angered_100_percent }
+			add_opinion_modifier = { target = VEN modifier = catholics_angered_100_percent }
+			add_opinion_modifier = { target = VAS modifier = catholics_angered_100_percent }
+			add_opinion_modifier = { target = SPR modifier = catholics_angered_100_percent }
+			add_opinion_modifier = { target = SNM modifier = catholics_angered_100_percent }
+			add_opinion_modifier = { target = SLV modifier = catholics_angered_100_percent }
+			add_opinion_modifier = { target = SIC modifier = catholics_angered_100_percent }
+			add_opinion_modifier = { target = SEY modifier = catholics_angered_100_percent }
+			add_opinion_modifier = { target = SBA modifier = catholics_angered_100_percent }
+			add_opinion_modifier = { target = SAR modifier = catholics_angered_100_percent }
+			add_opinion_modifier = { target = SAI modifier = catholics_angered_100_percent }
+			add_opinion_modifier = { target = RGS modifier = catholics_angered_100_percent }
+			add_opinion_modifier = { target = REU modifier = catholics_angered_100_percent }
+			add_opinion_modifier = { target = QBC modifier = catholics_angered_100_percent }
+			add_opinion_modifier = { target = PUE modifier = catholics_angered_100_percent }
+			add_opinion_modifier = { target = PRU modifier = catholics_angered_100_percent }
+			add_opinion_modifier = { target = POR modifier = catholics_angered_100_percent }
+			add_opinion_modifier = { target = POL modifier = catholics_angered_100_percent }
+			add_opinion_modifier = { target = PHI modifier = catholics_angered_100_percent }
+			add_opinion_modifier = { target = PAT modifier = catholics_angered_100_percent }
+			add_opinion_modifier = { target = PAR modifier = catholics_angered_100_percent }
+			add_opinion_modifier = { target = PAN modifier = catholics_angered_100_percent }
+			add_opinion_modifier = { target = PAD modifier = catholics_angered_100_percent }
+			add_opinion_modifier = { target = NMA modifier = catholics_angered_100_percent }
+			add_opinion_modifier = { target = NIC modifier = catholics_angered_100_percent }
+			add_opinion_modifier = { target = MNA modifier = catholics_angered_100_percent }
+			add_opinion_modifier = { target = MLT modifier = catholics_angered_100_percent }
+			add_opinion_modifier = { target = MEZ modifier = catholics_angered_100_percent }
+			add_opinion_modifier = { target = MEX modifier = catholics_angered_100_percent }
+			add_opinion_modifier = { target = MAT modifier = catholics_angered_100_percent }
+			add_opinion_modifier = { target = LIT modifier = catholics_angered_100_percent }
+			add_opinion_modifier = { target = LIE modifier = catholics_angered_100_percent }
+			add_opinion_modifier = { target = ITA modifier = catholics_angered_100_percent }
+			add_opinion_modifier = { target = IRE modifier = catholics_angered_100_percent }
+			add_opinion_modifier = { target = GUM modifier = catholics_angered_100_percent }
+			add_opinion_modifier = { target = GUD modifier = catholics_angered_100_percent }
+			add_opinion_modifier = { target = GAL modifier = catholics_angered_100_percent }
+			add_opinion_modifier = { target = FLA modifier = catholics_angered_100_percent }
+			add_opinion_modifier = { target = FGU modifier = catholics_angered_100_percent }
+			add_opinion_modifier = { target = ETM modifier = catholics_angered_100_percent }
+			add_opinion_modifier = { target = EQU modifier = catholics_angered_100_percent }
+			add_opinion_modifier = { target = ECU modifier = catholics_angered_100_percent }
+			add_opinion_modifier = { target = CZR modifier = catholics_angered_100_percent }
+			add_opinion_modifier = { target = CZE modifier = catholics_angered_100_percent }
+			add_opinion_modifier = { target = CUR modifier = catholics_angered_100_percent }
+			add_opinion_modifier = { target = CUB modifier = catholics_angered_100_percent }
+			add_opinion_modifier = { target = CRO modifier = catholics_angered_100_percent }
+			add_opinion_modifier = { target = CPV modifier = catholics_angered_100_percent }
+			add_opinion_modifier = { target = COS modifier = catholics_angered_100_percent }
+			add_opinion_modifier = { target = COL modifier = catholics_angered_100_percent }
+			add_opinion_modifier = { target = CHL modifier = catholics_angered_100_percent }
+			add_opinion_modifier = { target = CAT modifier = catholics_angered_100_percent }
+			add_opinion_modifier = { target = CAB modifier = catholics_angered_100_percent }
+			add_opinion_modifier = { target = BRI modifier = catholics_angered_100_percent }
+			add_opinion_modifier = { target = BRA modifier = catholics_angered_100_percent }
+			add_opinion_modifier = { target = BOL modifier = catholics_angered_100_percent }
+			add_opinion_modifier = { target = ARU modifier = catholics_angered_100_percent }
+			add_opinion_modifier = { target = ARG modifier = catholics_angered_100_percent }
+			add_opinion_modifier = { target = AND modifier = catholics_angered_100_percent }
+			add_opinion_modifier = { target = ADR modifier = catholics_angered_100_percent }
+
+			add_opinion_modifier = { target = WLO modifier = catholics_angered_75_percent }
+			add_opinion_modifier = { target = WIF modifier = catholics_angered_75_percent }
+			add_opinion_modifier = { target = WGR modifier = catholics_angered_75_percent }
+			add_opinion_modifier = { target = URG modifier = catholics_angered_75_percent }
+			add_opinion_modifier = { target = STM modifier = catholics_angered_75_percent }
+			add_opinion_modifier = { target = SRR modifier = catholics_angered_75_percent }
+			add_opinion_modifier = { target = SLU modifier = catholics_angered_75_percent }
+			add_opinion_modifier = { target = SLO modifier = catholics_angered_75_percent }
+			add_opinion_modifier = { target = SIL modifier = catholics_angered_75_percent }
+			add_opinion_modifier = { target = SAO modifier = catholics_angered_75_percent }
+			add_opinion_modifier = { target = SAB modifier = catholics_angered_75_percent }
+			add_opinion_modifier = { target = RWA modifier = catholics_angered_75_percent }
+			add_opinion_modifier = { target = RHI modifier = catholics_angered_75_percent }
+			add_opinion_modifier = { target = PLA modifier = catholics_angered_75_percent }
+			add_opinion_modifier = { target = NNG modifier = catholics_angered_75_percent }
+			add_opinion_modifier = { target = NMU modifier = catholics_angered_75_percent }
+			add_opinion_modifier = { target = NEN modifier = catholics_angered_75_percent }
+			add_opinion_modifier = { target = NCL modifier = catholics_angered_75_percent }
+			add_opinion_modifier = { target = LUX modifier = catholics_angered_75_percent }
+			add_opinion_modifier = { target = KIR modifier = catholics_angered_75_percent }
+			add_opinion_modifier = { target = HUN modifier = catholics_angered_75_percent }
+			add_opinion_modifier = { target = HAI modifier = catholics_angered_75_percent }
+			add_opinion_modifier = { target = GUA modifier = catholics_angered_75_percent }
+			add_opinion_modifier = { target = GNA modifier = catholics_angered_75_percent }
+			add_opinion_modifier = { target = FRA modifier = catholics_angered_75_percent }
+			add_opinion_modifier = { target = ELS modifier = catholics_angered_75_percent }
+			add_opinion_modifier = { target = DON modifier = catholics_angered_75_percent }
+			add_opinion_modifier = { target = DOM modifier = catholics_angered_75_percent }
+			add_opinion_modifier = { target = CRS modifier = catholics_angered_75_percent }
+			add_opinion_modifier = { target = COG modifier = catholics_angered_75_percent }
+			add_opinion_modifier = { target = BRN modifier = catholics_angered_75_percent }
+			add_opinion_modifier = { target = BON modifier = catholics_angered_75_percent }
+			add_opinion_modifier = { target = BEL modifier = catholics_angered_75_percent }
+			add_opinion_modifier = { target = BAV modifier = catholics_angered_75_percent }
+			add_opinion_modifier = { target = AUS modifier = catholics_angered_75_percent }
+			add_opinion_modifier = { target = ANG modifier = catholics_angered_75_percent }
+
+			add_opinion_modifier = { target = YUG modifier = catholics_angered_50_percent }
+			add_opinion_modifier = { target = WNG modifier = catholics_angered_50_percent }
+			add_opinion_modifier = { target = USA modifier = catholics_angered_50_percent }
+			add_opinion_modifier = { target = ULS modifier = catholics_angered_50_percent }
+			add_opinion_modifier = { target = UGA modifier = catholics_angered_50_percent }
+			add_opinion_modifier = { target = TOK modifier = catholics_angered_50_percent }
+			add_opinion_modifier = { target = TOG modifier = catholics_angered_50_percent }
+			add_opinion_modifier = { target = TAZ modifier = catholics_angered_50_percent }
+			add_opinion_modifier = { target = TAG modifier = catholics_angered_50_percent }
+			add_opinion_modifier = { target = SWI modifier = catholics_angered_50_percent }
+			add_opinion_modifier = { target = SSU modifier = catholics_angered_50_percent }
+			add_opinion_modifier = { target = SIT modifier = catholics_angered_50_percent }
+			add_opinion_modifier = { target = SEU modifier = catholics_angered_50_percent }
+			add_opinion_modifier = { target = RIG modifier = catholics_angered_50_percent }
+			add_opinion_modifier = { target = PRS modifier = catholics_angered_50_percent }
+			add_opinion_modifier = { target = PAP modifier = catholics_angered_50_percent }
+			add_opinion_modifier = { target = NAU modifier = catholics_angered_50_percent }
+			add_opinion_modifier = { target = MZB modifier = catholics_angered_50_percent }
+			add_opinion_modifier = { target = MRU modifier = catholics_angered_50_percent }
+			add_opinion_modifier = { target = MIC modifier = catholics_angered_50_percent }
+			add_opinion_modifier = { target = MAR modifier = catholics_angered_50_percent }
+			add_opinion_modifier = { target = MAD modifier = catholics_angered_50_percent }
+			add_opinion_modifier = { target = LAT modifier = catholics_angered_50_percent }
+			add_opinion_modifier = { target = KTG modifier = catholics_angered_50_percent }
+			add_opinion_modifier = { target = HON modifier = catholics_angered_50_percent }
+			add_opinion_modifier = { target = HOL modifier = catholics_angered_50_percent }
+			add_opinion_modifier = { target = GER modifier = catholics_angered_50_percent }
+			add_opinion_modifier = { target = GAB modifier = catholics_angered_50_percent }
+			add_opinion_modifier = { target = FPO modifier = catholics_angered_50_percent }
+			add_opinion_modifier = { target = FCO modifier = catholics_angered_50_percent }
+			add_opinion_modifier = { target = EVI modifier = catholics_angered_50_percent }
+			add_opinion_modifier = { target = DNZ modifier = catholics_angered_50_percent }
+			add_opinion_modifier = { target = CMR modifier = catholics_angered_50_percent }
+			add_opinion_modifier = { target = CEA modifier = catholics_angered_50_percent }
+			add_opinion_modifier = { target = CAN modifier = catholics_angered_50_percent }
+			add_opinion_modifier = { target = CAL modifier = catholics_angered_50_percent }
+			add_opinion_modifier = { target = BWU modifier = catholics_angered_50_percent }
+			add_opinion_modifier = { target = BLI modifier = catholics_angered_50_percent }
+			add_opinion_modifier = { target = BEN modifier = catholics_angered_50_percent }
+			add_opinion_modifier = { target = BAT modifier = catholics_angered_50_percent }
+
+			add_threat = 10
+		}
+
+	}
+
+	option = {
+		name = microstates_UES.2.b #they must be freed
+		limit = { country_exists = GER }
+		ai_will_do = {
+				factor = 400
+				modifier = {
+					has_government = communism
+					factor = 50
+				}
+			}
+
+		ROOT = {
+			add_opinion_modifier = { target = YUC modifier = catholics_angered_50_percent }
+			add_opinion_modifier = { target = WAF modifier = catholics_angered_50_percent }
+			add_opinion_modifier = { target = VEN modifier = catholics_angered_50_percent }
+			add_opinion_modifier = { target = VAS modifier = catholics_angered_50_percent }
+			add_opinion_modifier = { target = SPR modifier = catholics_angered_50_percent }
+			add_opinion_modifier = { target = SNM modifier = catholics_angered_50_percent }
+			add_opinion_modifier = { target = SLV modifier = catholics_angered_50_percent }
+			add_opinion_modifier = { target = SIC modifier = catholics_angered_50_percent }
+			add_opinion_modifier = { target = SEY modifier = catholics_angered_50_percent }
+			add_opinion_modifier = { target = SBA modifier = catholics_angered_50_percent }
+			add_opinion_modifier = { target = SAR modifier = catholics_angered_50_percent }
+			add_opinion_modifier = { target = SAI modifier = catholics_angered_50_percent }
+			add_opinion_modifier = { target = RGS modifier = catholics_angered_50_percent }
+			add_opinion_modifier = { target = REU modifier = catholics_angered_50_percent }
+			add_opinion_modifier = { target = QBC modifier = catholics_angered_50_percent }
+			add_opinion_modifier = { target = PUE modifier = catholics_angered_50_percent }
+			add_opinion_modifier = { target = PRU modifier = catholics_angered_50_percent }
+			add_opinion_modifier = { target = POR modifier = catholics_angered_50_percent }
+			add_opinion_modifier = { target = POL modifier = catholics_angered_50_percent }
+			add_opinion_modifier = { target = PHI modifier = catholics_angered_50_percent }
+			add_opinion_modifier = { target = PAT modifier = catholics_angered_50_percent }
+			add_opinion_modifier = { target = PAR modifier = catholics_angered_50_percent }
+			add_opinion_modifier = { target = PAN modifier = catholics_angered_50_percent }
+			add_opinion_modifier = { target = PAD modifier = catholics_angered_50_percent }
+			add_opinion_modifier = { target = NMA modifier = catholics_angered_50_percent }
+			add_opinion_modifier = { target = NIC modifier = catholics_angered_50_percent }
+			add_opinion_modifier = { target = MNA modifier = catholics_angered_50_percent }
+			add_opinion_modifier = { target = MLT modifier = catholics_angered_50_percent }
+			add_opinion_modifier = { target = MEZ modifier = catholics_angered_50_percent }
+			add_opinion_modifier = { target = MEX modifier = catholics_angered_50_percent }
+			add_opinion_modifier = { target = MAT modifier = catholics_angered_50_percent }
+			add_opinion_modifier = { target = LIT modifier = catholics_angered_50_percent }
+			add_opinion_modifier = { target = LIE modifier = catholics_angered_50_percent }
+			add_opinion_modifier = { target = ITA modifier = catholics_angered_50_percent }
+			add_opinion_modifier = { target = IRE modifier = catholics_angered_50_percent }
+			add_opinion_modifier = { target = GUM modifier = catholics_angered_50_percent }
+			add_opinion_modifier = { target = GUD modifier = catholics_angered_50_percent }
+			add_opinion_modifier = { target = GAL modifier = catholics_angered_50_percent }
+			add_opinion_modifier = { target = FLA modifier = catholics_angered_50_percent }
+			add_opinion_modifier = { target = FGU modifier = catholics_angered_50_percent }
+			add_opinion_modifier = { target = ETM modifier = catholics_angered_50_percent }
+			add_opinion_modifier = { target = EQU modifier = catholics_angered_50_percent }
+			add_opinion_modifier = { target = ECU modifier = catholics_angered_50_percent }
+			add_opinion_modifier = { target = CZR modifier = catholics_angered_50_percent }
+			add_opinion_modifier = { target = CZE modifier = catholics_angered_50_percent }
+			add_opinion_modifier = { target = CUR modifier = catholics_angered_50_percent }
+			add_opinion_modifier = { target = CUB modifier = catholics_angered_50_percent }
+			add_opinion_modifier = { target = CRO modifier = catholics_angered_50_percent }
+			add_opinion_modifier = { target = CPV modifier = catholics_angered_50_percent }
+			add_opinion_modifier = { target = COS modifier = catholics_angered_50_percent }
+			add_opinion_modifier = { target = COL modifier = catholics_angered_50_percent }
+			add_opinion_modifier = { target = CHL modifier = catholics_angered_50_percent }
+			add_opinion_modifier = { target = CAT modifier = catholics_angered_50_percent }
+			add_opinion_modifier = { target = CAB modifier = catholics_angered_50_percent }
+			add_opinion_modifier = { target = BRI modifier = catholics_angered_50_percent }
+			add_opinion_modifier = { target = BRA modifier = catholics_angered_50_percent }
+			add_opinion_modifier = { target = BOL modifier = catholics_angered_50_percent }
+			add_opinion_modifier = { target = ARU modifier = catholics_angered_50_percent }
+			add_opinion_modifier = { target = ARG modifier = catholics_angered_50_percent }
+			add_opinion_modifier = { target = AND modifier = catholics_angered_50_percent }
+			add_opinion_modifier = { target = ADR modifier = catholics_angered_50_percent }
+		}
+
+		release = VAT 
+		VAT = {
+			transfer_state = 2368
+		}
+	}
+}

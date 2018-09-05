@@ -1,4 +1,4 @@
-MNA_INF_01 = 
+﻿MNA_INF_01 = 
 {
 	name = "Corps des Sapeurs-Pompiers"
 
