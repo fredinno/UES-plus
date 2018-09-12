@@ -62,6 +62,7 @@ country_event = {
 				transfer_state = 1745
 				transfer_state = 1746
 				transfer_state = 1747
+				transfer_state = 2422
 			}
 			country_event = { id = japan.2 }
 		}

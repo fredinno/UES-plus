@@ -145,12 +145,15 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		days = 30
+		days = 60
 	}
 	
 	option = {
 		name = britain.6.a
-		end_puppet = RAJ
+		country_event = {
+			id = raj_UES.0
+		}
+
 	}
 	option = {
 		name = britain.6.b

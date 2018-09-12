@@ -2366,8 +2366,18 @@ country_event = {
 						}
 					}
 				}
+				2429 = {
+					OR = {
+						is_controlled_by = SOV
+						any_other_country = {
+							controls_state = 2429
+							is_in_faction_with = SOV
+							SOV = { is_faction_leader = yes }
+						}
+					}
+				}
 			}
-			GER = { transfer_state = 72 }
+			GER = { transfer_state = 72 transfer_state = 2429 }
 		}
 		if = {
 			limit = {

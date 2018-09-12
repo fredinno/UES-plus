@@ -24,6 +24,10 @@ country_event = {
 			is_puppet = yes
 			OR = {
 				owns_state = 288
+				owns_state = 2405
+				owns_state = 2403
+				owns_state = 2404
+				owns_state = 2402
 				owns_state = 640
 				owns_state = 803
 				owns_state = 1476
@@ -72,6 +76,50 @@ country_event = {
 				}
 			}
 			MYA = { transfer_state = 640 }
+		}
+		if = {
+			limit = {
+				2403 = {
+					OR = {
+						is_owned_by = RAJ
+						is_owned_by = ENG
+					}
+				}
+			}
+			MYA = { transfer_state = 2403 }
+		}
+		if = {
+			limit = {
+				2405 = {
+					OR = {
+						is_owned_by = RAJ
+						is_owned_by = ENG
+					}
+				}
+			}
+			MYA = { transfer_state = 2405 }
+		}
+		if = {
+			limit = {
+				2404 = {
+					OR = {
+						is_owned_by = RAJ
+						is_owned_by = ENG
+					}
+				}
+			}
+			MYA = { transfer_state = 2404 }
+		}
+		if = {
+			limit = {
+				2402 = {
+					OR = {
+						is_owned_by = RAJ
+						is_owned_by = ENG
+					}
+				}
+			}
+			MYA = { transfer_state = 2402 }
 		}
 		if = {
 			limit = {

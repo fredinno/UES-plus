@@ -1,0 +1,126 @@
+country_event = { #india freedom event
+	id = raj_UES.0
+	title = raj_UES.0.t
+	desc = raj_UES.0.d
+	picture = 
+
+		
+	is_triggered_only = yes
+
+	option = {
+		name = raj_UES.0.a #indian-partition pakistan
+		trigger = {
+			NOT = {
+				ROOT = { has_war = yes }
+				RAJ = { has_war = yes }
+			}
+		}
+		RAJ = {
+			diplomatic_relation = {
+				country = ENG
+				relation = puppet
+				active = no
+			}
+			remove_state_core = 1420
+			remove_state_core = 1471
+			remove_state_core = 1472
+			remove_state_core = 1473
+			remove_state_core = 430
+			remove_state_core = 1474
+			remove_state_core = 1475
+			remove_state_core = 1469
+			remove_state_core = 444
+			remove_state_core = 1470
+			remove_state_core = 445
+			remove_state_core = 442
+			remove_state_core = 1468
+			remove_state_core = 440
+			remove_state_core = 443
+			remove_state_core = 1467
+
+			add_opinion_modifier = {
+				target = SKK
+				refused_land = { value = -100 }
+			}
+
+			add_opinion_modifier = {
+				target = PAK
+				refused_land = { value = -100 }
+			}
+		}
+		
+		SKK = {
+			release = SKK
+			transfer_state = 1420
+		}
+		PAK = {
+			release = PAK
+			transfer_state = 1471
+			transfer_state = 1472
+			transfer_state = 1473
+			transfer_state = 430
+			transfer_state = 1474
+			transfer_state = 1475
+			transfer_state = 1469
+			transfer_state = 444
+			transfer_state = 1470
+			transfer_state = 445
+			transfer_state = 442
+			transfer_state = 1468
+			transfer_state = 440
+			transfer_state = 443
+			transfer_state = 1467
+			transfer_state = 786
+		}
+	}
+
+	option = {
+		name = raj_UES.0.a #just let go without any considerations
+
+		diplomatic_relation = {
+			country = ENG
+			relation = puppet
+			active = no
+		}
+	}
+}
+
+news_event = { #india freedom-news
+	id = raj_UES.1
+	title = raj_UES.1.t
+	desc = raj_UES.1.d
+	picture = 
+	major = yes
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = raj_UES.1.a
+		trigger = {
+			NOT = {
+				TAG = RAJ
+				TAG = PAK
+				TAG = SKK
+				TAG = BAN
+				TAG = ENG
+			}
+		}
+	}
+	option = {
+		name = raj_UES.1.b
+		trigger = {
+			TAG = RAJ
+			TAG = PAK
+			TAG = SKK
+			TAG = BAN
+		}
+	}
+	option = {
+		name = raj_UES.1.c
+		trigger = {
+			TAG = ENG
+		}
+	}
+}
+

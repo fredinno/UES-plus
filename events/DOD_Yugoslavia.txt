@@ -244,6 +244,12 @@ country_event = {
 			}
 			if = {
 				limit = {
+					103 = { is_owned_and_controlled_by = YUG }
+				}
+				CRO = { transfer_state = 2383 }
+			}
+			if = {
+				limit = {
 					756 = { is_owned_and_controlled_by = YUG }
 				}
 				CRO = { transfer_state = 756 }
@@ -253,6 +259,12 @@ country_event = {
 					757 = { is_owned_and_controlled_by = YUG }
 				}
 				CRO = { transfer_state = 757 }
+			}
+			if = {
+				limit = {
+					163 = { is_owned_and_controlled_by = YUG }
+				}
+				CRO = { transfer_state = 163 }
 			}
 			if = {
 				limit = {

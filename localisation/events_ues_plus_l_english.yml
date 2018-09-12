@@ -26,3 +26,12 @@
  microstates_UES.2.d:0 "The Vatican- the Pope's personal domain- has fallen to our armies. All around the world, Catholics rile up in protest against us, all chanting one demand- leave the Vatican."
  microstates_UES.2.a:0 "NEVER!"
  microstates_UES.2.b:0 "We reluctantly accept."
+
+
+
+ 
+ news.280.t:0 "India gains Home Rule"
+ news.280.desc:0 "After a tense meeting between the [RAJ.GetAdjective] ambassador and the [ENG.GetAdjective] foreign minister, the government of [ENG.GetNameDef] today announced that [RAJ.GetNameDef] will be allowed to determine its own policies from now on. The centuries of British rule over the subcontinent have come to a surprisingly quick end, as civil servants are ordered home and colonial administration is turned over to native Indians."
+ news.280.a:0 "Great."
+ news.280.b:0 "Is this the end of the British Empire?"
+ news.280.d:0 "Not our finest hour."

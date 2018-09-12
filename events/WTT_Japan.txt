@@ -66,6 +66,22 @@ country_event = {
 			}
 			if = {
 				limit = {
+					2365 = {
+						is_fully_controlled_by = FRA
+					}
+				}
+				FROM = { transfer_state = 2365 }
+			}
+			if = {
+				limit = {
+					2406 = {
+						is_fully_controlled_by = FRA
+					}
+				}
+				FROM = { transfer_state = 2406 }
+			}
+			if = {
+				limit = {
 					1518 = {
 						is_fully_controlled_by = FRA
 					}
@@ -376,6 +392,14 @@ country_event = {
 				if = {
 					limit = { 1517 = { is_fully_controlled_by = ROOT } }
 					transfer_state = 1517
+				}
+				if = {
+					limit = { 2365 = { is_fully_controlled_by = ROOT } }
+					transfer_state = 2365
+				}
+				if = {
+					limit = { 2406 = { is_fully_controlled_by = ROOT } }
+					transfer_state = 2406
 				}
 				if = {
 					limit = { 1519 = { is_fully_controlled_by = ROOT } }

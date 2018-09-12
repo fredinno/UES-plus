@@ -130,5 +130,6 @@ country_event = {
 		name = hungary.6.a
 		HUN = { transfer_state = 45 }
 		HUN = { transfer_state = 756 }
+		HUN = { transfer_state = 2378 }
 	}
 }

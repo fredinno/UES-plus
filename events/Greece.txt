@@ -32,7 +32,7 @@ country_event = {
 			factor = 100	
 		}
 
-		SOV = { transfer_state = 187 }
+		SOV = { transfer_state = 1350 }
 		if = {
 			limit = {
 				BUL = { 
@@ -44,6 +44,7 @@ country_event = {
 			}
 			BUL = { 
 				transfer_state = 184
+				transfer_state = 2382
 				add_opinion_modifier = { target = SOV modifier = SOV_ultimatum_to_greece_thrace }
 			}
 		}
@@ -183,7 +184,7 @@ country_event = {
 			limit = {
 				has_global_flag = GER_second_ljubljana_award_BUL_184
 			}
-			BUL = { transfer_state = 184 }
+			BUL = { transfer_state = 184 transfer_state = 2382 }
 		}
 
 		if = {

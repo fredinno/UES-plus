@@ -993,6 +993,10 @@ CRE = {
  color = rgb { 0 55 111 }
  color_ui = rgb { 0 55 111 }
 }
+BRS = {
+ color = rgb { 0 35 176 }
+ color_ui = rgb { 0 35 176 }
+}
 
 #reordered ues
 DAG = {
@@ -1542,4 +1546,32 @@ CAH = {
 GOA = {
 	color = rgb { 41 118 22 }
 	color_ui = rgb { 41 118 22 }
+}
+RYU = {
+	color = rgb { 94 0 94 }
+	color_ui = rgb { 94 0 94 }
+}
+FLK = {
+	color = rgb { 132 0 0 }
+	color_ui = rgb { 132 0 0 }
+}
+WSC = {
+	color = rgb { 255 224 4 }
+	color_ui = rgb { 255 224 4 }
+}
+ABR = {
+	color = rgb { 216 60 37 }
+	color_ui = rgb { 216 60 37 }
+}
+ARS = {
+	color = rgb { 31 124 89 }
+	color_ui = rgb { 31 124 89 }
+}
+CNI = {
+	color = rgb { 183 179 15 }
+	color_ui = rgb { 183 179 15 }
+}
+MDE = {
+	color = rgb { 27 82 51 }
+	color_ui = rgb { 27 82 51 }
 }

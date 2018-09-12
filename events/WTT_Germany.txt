@@ -490,6 +490,11 @@ country_event = {
 		effect_tooltip = {
 			GER = { transfer_state = 85 }
 			GER = { transfer_state = 86 }
+			GER = { transfer_state = 1020 }
+			GER = { transfer_state = 1021 }
+			GER = { transfer_state = 1022 }
+			GER = { transfer_state = 1023 }
+			GER = { transfer_state = 1032 }
 			GER = { add_ideas = anti_soviet_pact }
 			add_ideas = anti_soviet_pact
 			add_opinion_modifier = { target = GER modifier = danzig_for_guarantees }
@@ -546,11 +551,13 @@ country_event = {
 		transfer_state = 1022
 		transfer_state = 1021
 		transfer_state = 1020
+		transfer_state = 1032
 
 		add_state_core = 1020
 		add_state_core = 1021
 		add_state_core = 1022
 		add_state_core = 1023
+		add_state_core = 1032
 		add_state_core = 85
 		add_state_core = 86
 		add_ideas = anti_soviet_pact
@@ -604,6 +611,7 @@ country_event = {
 		add_state_claim = 1020
 		add_state_claim = 1021
 		add_state_claim = 1022
+		add_state_claim = 1032
 		add_state_claim = 1023
 	}
 
@@ -1714,9 +1722,7 @@ country_event = {
 			}
 		}
 		effect_tooltip = {
-			GER = { transfer_state = 1732 }
-			743 = { set_state_name = "Tsingtao" }
-			set_province_name = { id = 10000 name = "Tsingtao" }
+			GER = { transfer_state = 2422 }
 		}
 		GER = { country_event = { id = wtt_germany.48 days = 1 } }
 		hidden_effect = { news_event = { id = wtt_news.16 hours = 30 } }
@@ -1749,8 +1755,8 @@ country_event = {
 	option = {
 		name = wtt_germany.39.a
 		set_country_flag = GER_von_falkenhausen_promise_to_china
-		transfer_state = 1732
-		743 = { set_state_name = "Tsingtao" }
+		transfer_state = 2422
+		2422 = { set_state_name = "Tsingtao" }
 		set_province_name = { id = 10000 name = "Tsingtao" }
 		FROM = { country_event = { id = wtt_germany.41 } }
 	}
@@ -1774,7 +1780,7 @@ country_event = {
 	# Too bad
 	option = {
 		name = wtt_germany.40.a
-		add_state_claim = 1732
+		add_state_claim = 2422
 	}
 }
 
@@ -1881,9 +1887,7 @@ country_event = {
 	# Accept
 	option = {
 		name = wtt_germany.39.a
-		transfer_state = 1732
-		743 = { set_state_name = "Tsingtao" }
-		set_province_name = { id = 10000 name = "Tsingtao" }
+		transfer_state = 2422
 		JAP = { country_event = { id = wtt_germany.46 } }
 		CHI = {
 			country_event = { days = 1 id = china.2 }
@@ -1922,7 +1926,7 @@ country_event = {
 	# Too bad
 	option = {
 		name = wtt_germany.40.a
-		add_state_claim = 1732
+		add_state_claim = 2422
 	}
 }
 
@@ -1969,9 +1973,7 @@ country_event = {
 	# Too bad
 	option = {
 		name = excellent
-		transfer_state = 1732
-		743 = { set_state_name = "Tsingtao" }
-		set_province_name = { id = 10000 name = "Tsingtao" }
+		transfer_state = 2422
 	}
 }
 
@@ -2457,9 +2459,7 @@ country_event = {
 
 	trigger = {
 		tag = POL
-		has_full_control_of_state = 85
 		has_full_control_of_state = 86
-		owns_state = 85
 		owns_state = 86
 		has_idea = GER_the_great_red_menace
 		surrender_progress > 0.3
@@ -2514,10 +2514,20 @@ country_event = {
 		transfer_state = 1022
 		transfer_state = 1021
 		transfer_state = 1020
+		transfer_state = 1032
 		transfer_state = 86
 		add_state_core = 85
+		add_state_core = 1023
+		add_state_core = 1032
+		add_state_core = 1020
+		add_state_core = 1022
 		add_state_core = 86
 		85 = { add_claim_by = SOV }
+		1023 = { add_claim_by = SOV }
+		1022 = { add_claim_by = SOV }
+		1021 = { add_claim_by = SOV }
+		1020 = { add_claim_by = SOV }
+		1032 = { add_claim_by = SOV }
 		86 = { add_claim_by = SOV }
 		POL = { country_event = { id = wtt_germany.59 } }
 	}
@@ -3040,13 +3050,39 @@ country_event = {
 			annex_country = { target = HUN transfer_troops = yes }
 			annex_country = { target = CZE transfer_troops = yes }
 			154 = { add_core_of = ROOT }
+			1282 = { add_core_of = ROOT }
+			1281 = { add_core_of = ROOT }
+			1279 = { add_core_of = ROOT }
+			1297 = { add_core_of = ROOT }
+			1294 = { add_core_of = ROOT }
+			1295 = { add_core_of = ROOT }
+			1292 = { add_core_of = ROOT }
+			1293 = { add_core_of = ROOT }
+			1296 = { add_core_of = ROOT }
+			1289 = { add_core_of = ROOT }
+			1291 = { add_core_of = ROOT }
+			1290 = { add_core_of = ROOT }
+			1286 = { add_core_of = ROOT }
+			1285 = { add_core_of = ROOT }
+			1287 = { add_core_of = ROOT }
+			1288 = { add_core_of = ROOT }
+			1275 = { add_core_of = ROOT }
+			1280 = { add_core_of = ROOT }
+			1278 = { add_core_of = ROOT }
+			1277 = { add_core_of = ROOT }
+			1274 = { add_core_of = ROOT }
+			1283 = { add_core_of = ROOT }
+			1284 = { add_core_of = ROOT }
+			1276 = { add_core_of = ROOT }
 			155 = { add_core_of = ROOT }
+			746 = { add_core_of = ROOT }
 			43 = { add_core_of = ROOT }
 			69 = { add_core_of = ROOT }
 			9 = { add_core_of = ROOT }
 			75 = { add_core_of = ROOT }
 			74 = { add_core_of = ROOT }
 			72 = { add_core_of = ROOT }
+			2429 = { add_core_of = ROOT }
 			70 = { add_core_of = ROOT }
 			664 = { add_core_of = ROOT }
 			71 = { add_core_of = ROOT }
@@ -3063,12 +3099,29 @@ country_event = {
 			annex_country = { target = CZE transfer_troops = yes }
 			152 = { add_core_of = ROOT }
 			153 = { add_core_of = ROOT }
+			1282 = { add_core_of = ROOT }
+			1281 = { add_core_of = ROOT }
+			1279 = { add_core_of = ROOT }
+			1278 = { add_core_of = ROOT }
+			1277 = { add_core_of = ROOT }
+			1274 = { add_core_of = ROOT }
+			1283 = { add_core_of = ROOT }
+			1284 = { add_core_of = ROOT }
+			1276 = { add_core_of = ROOT }
+			1272 = { add_core_of = ROOT }
+			1273 = { add_core_of = ROOT }
+			1271 = { add_core_of = ROOT }
+			1270 = { add_core_of = ROOT }
+			1268 = { add_core_of = ROOT }
+			1269 = { add_core_of = ROOT }
+			1267 = { add_core_of = ROOT }
 			4 = { add_core_of = ROOT }
 			69 = { add_core_of = ROOT }
 			9 = { add_core_of = ROOT }
 			75 = { add_core_of = ROOT }
 			74 = { add_core_of = ROOT }
 			72 = { add_core_of = ROOT }
+			2429 = { add_core_of = ROOT }
 			70 = { add_core_of = ROOT }
 			664 = { add_core_of = ROOT }
 			71 = { add_core_of = ROOT }
@@ -3085,6 +3138,32 @@ country_event = {
 			annex_country = { target = AUS transfer_troops = yes }
 			152 = { add_core_of = ROOT }
 			153 = { add_core_of = ROOT }
+			1294 = { add_core_of = ROOT }
+			1295 = { add_core_of = ROOT }
+			1292 = { add_core_of = ROOT }
+			1293 = { add_core_of = ROOT }
+			1296 = { add_core_of = ROOT }
+			1289 = { add_core_of = ROOT }
+			1291 = { add_core_of = ROOT }
+			1290 = { add_core_of = ROOT }
+			1286 = { add_core_of = ROOT }
+			1285 = { add_core_of = ROOT }
+			1287 = { add_core_of = ROOT }
+			1288 = { add_core_of = ROOT }
+			1275 = { add_core_of = ROOT }
+			1280 = { add_core_of = ROOT }
+			1277 = { add_core_of = ROOT }
+			1274 = { add_core_of = ROOT }
+			1283 = { add_core_of = ROOT }
+			1284 = { add_core_of = ROOT }
+			1276 = { add_core_of = ROOT }
+			1272 = { add_core_of = ROOT }
+			1273 = { add_core_of = ROOT }
+			1271 = { add_core_of = ROOT }
+			1270 = { add_core_of = ROOT }
+			1268 = { add_core_of = ROOT }
+			1269 = { add_core_of = ROOT }
+			1267 = { add_core_of = ROOT }
 			4 = { add_core_of = ROOT }
 			154 = { add_core_of = ROOT }
 			155 = { add_core_of = ROOT }

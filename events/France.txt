@@ -489,6 +489,10 @@ country_event = {
 			set_state_controller = 892
 		}
 		if = {
+			limit = { 2366 = { owner = { original_tag = FRA } } }
+			set_state_controller = 2366
+		}
+		if = {
 			limit = { 893 = { owner = { original_tag = FRA } } }
 			set_state_controller = 893
 		}
@@ -507,6 +511,22 @@ country_event = {
 		if = {
 			limit = { 897 = { owner = { original_tag = FRA } } }
 			set_state_controller = 897
+		}
+		if = {
+			limit = { 2430 = { owner = { original_tag = FRA } } }
+			set_state_controller = 2430
+		}
+		if = {
+			limit = { 2416 = { owner = { original_tag = FRA } } }
+			set_state_controller = 892
+		}
+		if = {
+			limit = { 2377 = { owner = { original_tag = FRA } } }
+			set_state_controller = 892
+		}
+		if = {
+			limit = { 2421 = { owner = { original_tag = FRA } } }
+			set_state_controller = 892
 		}
 		if = {
 			limit = { 898 = { owner = { original_tag = FRA } } }

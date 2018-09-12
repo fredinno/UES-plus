@@ -32,6 +32,8 @@ country_event = {
 				transfer_state = 775
 				transfer_state = 776
 				transfer_state = 2292
+				transfer_state = 2341
+				transfer_state = 2388
 				transfer_state = 2293
 				transfer_state = 2294
 				transfer_state = 2295
@@ -121,6 +123,7 @@ country_event = {
 					}
 			transfer_state = 547
 			transfer_state = 2294
+			transfer_state = 2431
 			transfer_state = 2295
 		}
 
@@ -160,6 +163,20 @@ country_event = {
 				TAZ = { exists = yes }	
 					}
 			puppet = TAZ
+		}
+
+		if = {
+			limit = { 
+				ZAN = { exists = no }	
+					}
+			transfer_state = 2347
+		}
+
+		if = {
+			limit = { 
+				ZAN = { exists = yes }	
+					}
+			puppet = ZAN
 		}
 
 		if = {
@@ -204,6 +221,35 @@ country_event = {
 					}
 			puppet = BOT
 		}
+
+		if = {
+			limit = { 
+				SWA = { exists = no }	
+					}
+			transfer_state = 542
+		}
+
+		if = {
+			limit = { 
+				SWA = { exists = yes }	
+					}
+			puppet = SWA
+		}
+
+		if = {
+			limit = { 
+				LES = { exists = no }	
+					}
+			transfer_state = 542
+		}
+
+		if = {
+			limit = { 
+				LES = { exists = yes }	
+					}
+			puppet = LES
+		}
+
 		hidden_effect = {
 			news_event = { id = news.260 hours = 6 }
 					}
@@ -250,22 +296,11 @@ country_event = {
 
 		if = {
 		limit = { 
-			ZIM = { exists = no }	
-			}
-
-			ZIM = { transfer_state = 775 }
-
-			ENG = {
-			puppet = ZIM 
-				}
-			}
-
-		if = {
-		limit = { 
 			MLW = { exists = no } 
 				}
 			MLW = {
 				transfer_state = 776
+				transfer_state = 2388
 				}
 			
 			ENG = { 
@@ -281,6 +316,7 @@ country_event = {
 				transfer_state = 547
 				transfer_state = 2294
 				transfer_state = 2295
+				transfer_state = 2431
 				}
 			
 			ENG = { 
@@ -317,6 +353,19 @@ country_event = {
 
 		if = {
 		limit = { 
+			ZAN = { exists = no } 
+				}
+			ZAN = {
+				transfer_state = 2347
+				}
+			
+			ENG = { 
+				puppet = ZAN 
+				}
+			}
+
+		if = {
+		limit = { 
 			TAZ = { exists = no } 
 				}
 			TAZ = {
@@ -331,7 +380,7 @@ country_event = {
 				}
 			}
 
-		SAF = { transfer_state = 542 }
+		SAF = { transfer_state = 542 transfer_state = 771 transfer_state = 770 transfer_state = 775 }
 		hidden_effect = {
 			news_event = { id = news.261 hours = 6 }
 			}
@@ -1088,6 +1137,8 @@ country_event = {
 		
 		transfer_state = 543
 		transfer_state = 2306
+		transfer_state = 708
+		transfer_state = 706
 	}
 }
 
@@ -1108,7 +1159,7 @@ country_event = {
 		create_wargoal = {
 					type = take_state_focus
 					target = FRA
-					generator = { 543 }
+					generator = { 543 2306 708 706 }
 					}
 	}
 	option = { #back down if you are a coward
@@ -1686,12 +1737,14 @@ country_event = {
 						controls_state = 547
 						controls_state = 2295
 						controls_state = 2294
+						controls_state = 2431
 						} 
 
 					}
 						transfer_state = 547
 						transfer_state = 2295
 						transfer_state = 2294
+						transfer_state = 2431
 					}
 				}
 			SAF = { puppet = KEN }
@@ -1710,12 +1763,14 @@ country_event = {
 							controls_state = 547 
 							controls_state = 2295
 							controls_state = 2294
+							controls_state = 2431
 							} 
 
 						}
 						transfer_state = 547
 						transfer_state = 2295
 						transfer_state = 2294
+						transfer_state = 2431
 					}
 				hidden_effect = {
 					set_politics = {
@@ -2279,10 +2334,12 @@ country_event = {
 				limit = { 
 					SAF = { 
 						controls_state = 776  
+						controls_state = 2388
 						} 
 
 					}
 						transfer_state = 776
+						transfer_state = 2388
 					}
 				}
 			SAF = { puppet = MLW }
@@ -2299,12 +2356,12 @@ country_event = {
 					limit = { 
 						SAF = { 
 							controls_state = 776 
-							
+							controls_state = 2388
 							} 
 
 						}
 						transfer_state = 776
-						
+						transfer_state = 2388
 					}
 				hidden_effect = {
 					set_politics = {

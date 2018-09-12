@@ -1508,19 +1508,20 @@ focus_tree = {
 				has_wargoal_against = MAL
 				has_war_with = MAL
 			}
+			INC = { is_puppet_of = FRA }
 			OR = {
 				AND = {
 					671 = {
-						NOT = { is_controlled_by = FRA }
+						NOT = { is_controlled_by = INC }
 					}
 					670 = {
-						NOT = { is_controlled_by = FRA }
+						NOT = { is_controlled_by = INC }
 					}
 					286 = {
-						NOT = { is_controlled_by = FRA }
+						NOT = { is_controlled_by = INC }
 					}
 					741 = {
-						NOT = { is_controlled_by = FRA }
+						NOT = { is_controlled_by = INC }
 					}
 				}
 				has_wargoal_against = FRA
@@ -1561,16 +1562,16 @@ focus_tree = {
 				limit = {
 					OR = {
 						671 = {
-							is_controlled_by = FRA
+							is_controlled_by = INC
 						}
 						670 = {
-							is_controlled_by = FRA
+							is_controlled_by = INC
 						}
 						286 = {
-							is_controlled_by = FRA
+							is_controlled_by = INC
 						}
 						741 = {
-							is_controlled_by = FRA
+							is_controlled_by = INC
 						}
 					}
 					NOT = { has_wargoal_against = FRA }

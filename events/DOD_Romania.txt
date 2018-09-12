@@ -725,9 +725,21 @@ country_event = {
 		}
 		if = {
 			limit = {
+				1299 = { is_owned_by = YUG }
+			}
+			SLV = { transfer_state = 1299 }
+		}
+		if = {
+			limit = {
 				1300 = { is_owned_by = YUG }
 			}
 			SLV = { transfer_state = 1300 }
+		}
+		if = {
+			limit = {
+				2378 = { is_owned_by = YUG }
+			}
+			SLV = { transfer_state = 2378 }
 		}
 		puppet = SLV
 
@@ -763,6 +775,12 @@ country_event = {
 				109 = { is_owned_by = YUG }
 			}
 			CRO = { transfer_state = 109 }
+		}
+		if = {
+			limit = {
+				2383 = { is_owned_by = YUG }
+			}
+			CRO = { transfer_state = 2383 }
 		}
 		if = {
 			limit = {
@@ -844,7 +862,7 @@ country_event = {
 					NOT = { owns_state = 102 owns_state = 1298 }
 				}
 				ITA = {
-					NOT = { owns_state = 103 owns_state = 1302 owns_state = 1301 }
+					NOT = { owns_state = 2383 }
 				}
 			}
 		}
@@ -858,7 +876,7 @@ country_event = {
 		if = {
 			limit = { 
 				ITA = { 
-					NOT = { owns_state = 103 owns_state = 1302 owns_state = 1301 } 
+					NOT = { owns_state = 2383 } 
 				} 
 				GER = { owns_state = 102 owns_state = 1298 }
 			}
@@ -924,11 +942,9 @@ country_event = {
 		}
 		if = {
 			limit = {
-				NOT = { 103 = {is_claimed_by = ITA } 1302 = {is_claimed_by = ITA } 1301 = {is_claimed_by = ITA } }
+				NOT = { 2383 = {is_claimed_by = ITA } }
 			}
-			add_state_claim = 103
-			add_state_claim = 1302
-			add_state_claim = 1301
+			add_state_claim = 2383
 		}
 		ROM = { 
 			country_event = DOD_romania.65 
@@ -1072,7 +1088,7 @@ country_event = {
 				factor = 2
 			}
 			modifier = {
-				103 = { is_claimed_by = ITA }
+				2383 = { is_claimed_by = ITA }
 				factor = 2
 			}
 		}
@@ -1264,6 +1280,12 @@ country_event = {
 		}
 		if = {
 			limit = {
+				1299 = { is_owned_by = YUG }
+			}
+			SLV = { transfer_state = 1299 }
+		}
+		if = {
+			limit = {
 				1300 = { is_owned_by = YUG }
 			}
 			SLV = { transfer_state = 1300 }
@@ -1378,6 +1400,26 @@ country_event = {
 		}
 		if = {
 			limit = {
+				2383 = { 
+					is_owned_by = YUG 
+					NOT = { is_claimed_by = ITA }
+				}
+
+			}
+			CRO = { transfer_state = 2383 }
+		}
+		if = {
+			limit = {
+				2383 = { 
+					is_owned_by = YUG 
+					is_claimed_by = ITA
+				}
+
+			}
+			ITA = { transfer_state = 2383 }
+		}
+		if = {
+			limit = {
 				1302 = { 
 					is_owned_by = YUG 
 					NOT = { is_claimed_by = ITA }
@@ -1444,7 +1486,7 @@ country_event = {
 				create_wargoal = {
 					target = YUG
 					type = take_state_focus
-					generator = { 104 102 109 753 754 755 1304 1305 1306 1298 1303 757 756 } 
+					generator = { 104 102 109 753 754 755 1304 1305 1306 1298 1303 757 756 2378 } 
 				}
 			}
 		}
@@ -1454,7 +1496,7 @@ country_event = {
 				create_wargoal = {
 					target = YUG
 					type = take_state_focus
-					generator = { 106 103 105 748 1334 747 749 1301 1302 } 
+					generator = { 106 103 105 748 1334 747 749 1301 1302 2383 } 
 				}	
 			}
 		}
@@ -2117,7 +2159,7 @@ country_event = {
 		}
 		add_state_claim = 70
 		add_state_claim = 71
-		add_state_claim = 72
+		add_state_claim = 2429
 		add_state_claim = 73
 		add_state_claim = 1282
 		add_state_claim = 1279
@@ -2182,13 +2224,13 @@ country_event = {
 		SLO = {
 			transfer_state = 70
 			transfer_state = 71
-			transfer_state = 72
+			transfer_state = 2429
 			transfer_state = 73
 			transfer_state = 1282
 			transfer_state = 1279
 			add_state_core = 70
 			add_state_core = 71
-			add_state_core = 72
+			add_state_core = 2429
 			add_state_core = 73
 			add_state_core = 1282
 			add_state_core = 1279
@@ -2235,7 +2277,7 @@ country_event = {
 			create_wargoal = {
 				type = take_state_focus
 				target = CZE
-				generator = { 70 71 72 73 1282 1279 }
+				generator = { 70 71 2429 73 1282 1279 }
 			}
 			country_event = DOD_romania.115
 		}

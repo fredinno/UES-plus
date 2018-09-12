@@ -2093,7 +2093,9 @@ country_event = {
 	option = {
 		name = germany.52.a
 		72 = { add_core_of = POL }
+		2429 = { add_core_of = POL }
 		POL = { transfer_state = 72 }
+		POL = { transfer_state = 2429 }
 	}
 }
 
@@ -2450,10 +2452,21 @@ country_event = {
 			}
 			POL = { transfer_state = 72 } # Give Poland Zaolzie
 		}
-
 		if = {
 			limit = {
-				72 = {
+				2429 = {
+					OR = {
+						is_owned_by = CZE
+						is_owned_by = GER
+					}
+				}
+				country_exists = POL
+			}
+			POL = { transfer_state = 2429 } # Give Poland Zaolzie
+		}
+		if = {
+			limit = {
+				2429 = {
 					OR = {
 						is_owned_by = CZE
 						is_owned_by = GER
@@ -2461,7 +2474,20 @@ country_event = {
 				}
 				NOT = { country_exists = POL }
 			}
-			SLO = { transfer_state = 72 } # Give Slovakia Zaolzie
+			SLO = { transfer_state = 2429 } # Give slovaia Zaolzie
+		}
+
+		if = {
+			limit = {
+				72 = {
+					OR = {
+						is_owned_by = CZE
+						is_owned_by = CZR
+					}
+				}
+				NOT = { country_exists = POL }
+			}
+			GER = { transfer_state = 72 } # Give germany Zaolzie
 		}
 
 		if = {
@@ -2514,8 +2540,15 @@ country_event = {
 						is_owned_by = GER
 					}
 				}
+				2429 = {
+					OR = {
+						is_owned_by = CZE
+						is_owned_by = GER
+					}
+				}
 			}
 			POL = { transfer_state = 72 } # Give Poland Zaolzie
+			POL = { transfer_state = 2429 }
 		}
 		custom_effect_tooltip = end_of_czechoslovakia_mefo_bills_tt
 		add_to_variable = { var = GER_mefo_bill_counter value = -5 }
@@ -2733,8 +2766,15 @@ country_event = {
 						is_owned_by = GER
 					}
 				}
+				2429 = {
+					OR = {
+						is_owned_by = CZE
+						is_owned_by = GER
+					}
+				}
 			}
 			POL = { transfer_state = 72 } # Give Poland Zaolzie
+			POL = { transfer_state = 2429 }
 		}
 		hidden_effect = {
 			country_event = { hours = 6 id = news.60 }
@@ -3124,6 +3164,10 @@ country_event = {
 		}
 		set_country_flag = GER_rhineland_backed_down
 		42 = { set_demilitarized_zone = yes }
+		967 = { set_demilitarized_zone = yes }
+		968 = { set_demilitarized_zone = yes }
+		966 = { set_demilitarized_zone = yes }
+		965 = { set_demilitarized_zone = yes }
 		51 = { set_demilitarized_zone = yes }
 		add_timed_idea = {
 			idea = rhineland_challenge_met
@@ -3197,6 +3241,10 @@ country_event = {
 		set_country_flag = GER_rhineland_backed_down
 		add_war_support = -0.2 #That was scary for a moment there!
 		42 = { set_demilitarized_zone = yes }
+		967 = { set_demilitarized_zone = yes }
+		968 = { set_demilitarized_zone = yes }
+		966 = { set_demilitarized_zone = yes }
+		965 = { set_demilitarized_zone = yes }
 		51 = { set_demilitarized_zone = yes }
 		add_timed_idea = {
 			idea = rhineland_challenge_met
@@ -3788,6 +3836,10 @@ country_event = {
 			if = {
 				limit = { GER = { owns_state = 72 } }
 				transfer_state = 72
+			}
+			if = {
+				limit = { GER = { owns_state = 2429 } }
+				transfer_state = 2429
 			}
 			if = {
 				limit = { GER = { owns_state = 1282 } }
@@ -4731,7 +4783,11 @@ country_event = {
 					if = {
 						limit = { YUG = { owns_state = 1306 } }
 						transfer_state = 1306
-					}					
+					}		
+					if = {
+						limit = { YUG = { owns_state = 2383 } }
+						transfer_state = 2383
+					}						
 				}
 				puppet = CRO
 				annex_country = { target = YUG transfer_troops = no }
@@ -4808,7 +4864,11 @@ country_event = {
 				if = {
 					limit = { YUG = { owns_state = 1306 } }
 					transfer_state = 1306
-				}						
+				}
+				if = {
+						limit = { YUG = { owns_state = 2383 } }
+						transfer_state = 2383
+					}									
 			}
 			puppet = CRO
 			annex_country = { target = YUG transfer_troops = no }
@@ -4900,7 +4960,11 @@ country_event = {
 					if = {
 						limit = { YUG = { owns_state = 1306 } }
 						transfer_state = 1306
-					}						
+					}
+					if = {
+						limit = { YUG = { owns_state = 2383 } }
+						transfer_state = 2383
+					}									
 				}
 				puppet = CRO
 				puppet = YUG
@@ -4983,7 +5047,11 @@ country_event = {
 				if = {
 					limit = { YUG = { owns_state = 1306 } }
 					transfer_state = 1306
-				}						
+				}
+				if = {
+						limit = { YUG = { owns_state = 1306 } }
+						transfer_state = 2383
+					}									
 			}
 			puppet = CRO
 			puppet = YUG
@@ -5302,6 +5370,7 @@ country_event = {
 				}
 				GER = { transfer_state = 1348 }
 			}
+
 		}
 	}
 

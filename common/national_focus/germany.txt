@@ -4935,6 +4935,7 @@ focus_tree = {
 				YUG = { is_puppet_of = GER }
 				NOT = { controls_state = 4 }
 				NOT = { controls_state = 152 }
+
 				NOT = { YUG = { owns_state = 102 } }
 			}
 		}
@@ -4995,7 +4996,7 @@ focus_tree = {
 					owns_state = 102
 					owns_state = 45
 					owns_state = 106
-					owns_state = 103
+					owns_state = 2383
 					owns_state = 105
 				}
 			}
@@ -5052,6 +5053,10 @@ focus_tree = {
 							OR = {
 								45 = { is_owned_by = YUG }
 								45 = { is_owned_by = GER }
+								756 = { is_owned_by = YUG }
+								756 = { is_owned_by = GER }
+								2378 = { is_owned_by = YUG }
+								2378 = { is_owned_by = GER }
 							}
 						}
 						HUN = {
@@ -5067,12 +5072,17 @@ focus_tree = {
 								OR = {
 									45 = { is_owned_by = YUG }
 									45 = { is_owned_by = GER }
+									756 = { is_owned_by = YUG }
+									756 = { is_owned_by = GER }
+									2378 = { is_owned_by = YUG }
+									2378 = { is_owned_by = GER }
 								}
 						}
 						HUN = {
 							add_opinion_modifier = { target = GER modifier = GER_first_ljubljana_award_GER }
 							transfer_state = 45
 							transfer_state = 756
+							transfer_state = 2378
 						}
 					}
 				}
@@ -5097,6 +5107,10 @@ focus_tree = {
 							OR = {
 								106 = { is_owned_by = YUG }
 								106 = { is_owned_by = GER }
+								748 = { is_owned_by = YUG }
+								748 = { is_owned_by = GER }
+								1334 = { is_owned_by = YUG }
+								1334 = { is_owned_by = GER }
 							}
 						}
 						BUL = { 
@@ -5112,6 +5126,10 @@ focus_tree = {
 							OR = {
 								106 = { is_owned_by = YUG }
 								106 = { is_owned_by = GER }
+								748 = { is_owned_by = YUG }
+								748 = { is_owned_by = GER }
+								1334 = { is_owned_by = YUG }
+								1334 = { is_owned_by = GER }
 							}
 						}
 						BUL = {
@@ -5152,12 +5170,14 @@ focus_tree = {
 						add_opinion_modifier = { target = GER modifier = GER_first_ljubljana_award_GER }
 						if = {
 							limit = { has_completed_focus = ITA_slovenia_dalmatia_claims }
-							transfer_state = 103
-							transfer_state = 1301
+							transfer_state = 2383
 						}
 						if = {
 							limit = { owns_state = 44 }
 							transfer_state = 105
+							transfer_state = 749
+							transfer_state = 747
+							add_state_claim = 750
 						}	
 					}
 				}
@@ -5220,6 +5240,9 @@ focus_tree = {
 				owns_state = 731
 				owns_state = 186
 				owns_state = 185
+				owns_state = 184
+				owns_state = 182
+				owns_state = 2382
 				owns_state = 47 
 			}
 		}
@@ -5236,6 +5259,9 @@ focus_tree = {
 		#		GRE = {
 		#			NOT = { owns_state = 731 }
 		#			NOT = { owns_state = 186 }
+		#			NOT = { owns_state = 184 }
+		#			NOT = { owns_state = 182 }
+		#			NOT = { owns_state = 2382 }
 		#			NOT = { owns_state = 185 }
 		#			NOT = { owns_state = 47 }
 		#		}
@@ -5291,9 +5317,13 @@ focus_tree = {
 				limit = {
 					GRE = {
 						OR = {
-							owns_state = 185
+							owns_state = 731
 							owns_state = 186
-							owns_state = 47
+							owns_state = 185
+							owns_state = 184
+							owns_state = 182
+							owns_state = 2382
+							owns_state = 47 
 						} 
 					}
 					ITA = {
@@ -5311,7 +5341,7 @@ focus_tree = {
 			}
 			if = {
 				limit = {
-					GRE = { owns_state = 184 }
+					GRE = { owns_state = 184 owns_state = 2382 owns_state = 2434 }
 					BUL = {
 						NOT = { has_war_with = GRE }
 						country_exists = BUL
@@ -5432,6 +5462,11 @@ focus_tree = {
 				GER_remove_mefo_bills = yes
 			}
 			42 = { set_demilitarized_zone = no }
+			968 = { set_demilitarized_zone = no }
+			967 = { set_demilitarized_zone = no }
+			966 = { set_demilitarized_zone = no }
+			42 = { set_demilitarized_zone = no }
+			965 = { set_demilitarized_zone = no }
 			51 = { set_demilitarized_zone = no }
 			add_political_power = 120
 			add_named_threat = { threat = 5 name = GER_oppose_hitler }
@@ -5965,9 +6000,64 @@ focus_tree = {
 				type = annex_everything
 				target = FRA
 			}
-			add_state_claim = 539
 			add_state_claim = 541
 			add_state_claim = 546
+			add_state_claim = 778
+			add_state_claim = 777
+			add_state_claim = 767
+			add_state_claim = 2290
+			add_state_claim = 2289
+			add_state_claim = 660
+			add_state_claim = 2278
+			add_state_claim = 761
+			add_state_claim = 2271
+			add_state_claim = 558
+			add_state_claim = 2270
+			add_state_claim = 762
+			add_state_claim = 2352
+			add_state_claim = 274
+			add_state_claim = 768
+			add_state_claim = 539
+			add_state_claim = 545
+			add_state_claim = 2296
+			add_state_claim = 2388
+			add_state_claim = 538
+			add_state_claim = 2300
+			add_state_claim = 776
+			add_state_claim = 295
+			add_state_claim = 2298
+			add_state_claim = 718
+			add_state_claim = 2299
+			add_state_claim = 548
+			add_state_claim = 2431
+			add_state_claim = 2294
+			add_state_claim = 2295
+			add_state_claim = 547
+			add_state_claim = 2235
+			add_state_claim = 2354
+			add_state_claim = 2358
+			add_state_claim = 2356
+			add_state_claim = 2351
+			add_state_claim = 2357
+			add_state_claim = 763
+			add_state_claim = 2375
+			add_state_claim = 2304
+			add_state_claim = 2374
+			add_state_claim = 541
+			add_state_claim = 2305
+			add_state_claim = 1981
+			add_state_claim = 2376
+			add_state_claim = 812
+			add_state_claim = 726
+			add_state_claim = 647
+			add_state_claim = 646
+			add_state_claim = 633
+			add_state_claim = 2422
+			add_state_claim = 684
+			add_state_claim = 2352
+			add_state_claim = 2347
+			add_state_claim = 2292
+			add_state_claim = 2293
 			add_state_claim = 737
 			add_state_claim = 684
 			add_state_claim = 633
@@ -6491,7 +6581,21 @@ focus_tree = {
 				target = FRA
 			}
 			add_state_claim = 28
+			add_state_claim = 2290
+			add_state_claim = 758
+			add_state_claim = 763
+			add_state_claim = 762
+			add_state_claim = 767
+			add_state_claim = 761
+			add_state_claim = 2278
+			add_state_claim = 2289
+			add_state_claim = 660
 			add_state_claim = 539
+			add_state_claim = 768
+			add_state_claim = 2356
+			add_state_claim = 2351
+			add_state_claim = 2358
+			add_state_claim = 2357
 		}
 	}
 
@@ -6786,6 +6890,7 @@ focus_tree = {
 				limit = { country_exists = LIT }
 				LIT = {
 					add_ideas = GER_safeguard_the_baltic
+					96 = { add_claim_by = LIT }
 					add_ai_strategy = {
 						type = befriend
 						id = "GER"			
@@ -6842,8 +6947,10 @@ focus_tree = {
 				relation = guarantee
 				active = yes
 			}
+
 			FIN = {
 				add_ideas = GER_FIN_industrial_support
+				hidden_event = {}
 				add_ai_strategy = {
 					type = befriend
 					id = "GER"			

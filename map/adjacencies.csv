@@ -136,6 +136,8 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 8435;6550;sea;7452;-1;-1;-1;-1;;Aegan Isle-Strait
 7304;4360;sea;8614;-1;-1;-1;-1;;New Foundland-Strait
 11009;5173;sea;8961;-1;-1;-1;-1;;Terra Del Fugo-Strait
+1440;13375;sea;5507;-1;-1;-1;-1;;Spanish Virgin Islands
+3924;3868;sea;5838;-1;-1;-1;-1;;Lower Dalmatia
 5407;5382;;-1;-1;-1;-1;-1;GIBRALTAR_STRAIT;Gibraltar North
 5407;2400;;-1;-1;-1;-1;-1;GIBRALTAR_STRAIT;Gibraltar South
 2455;2506;;-1;-1;-1;-1;-1;DANISH_BELTS_STRAIT;Øresund
